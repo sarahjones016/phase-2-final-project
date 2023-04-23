@@ -1,0 +1,472 @@
+{
+    "parks": [
+      {
+        "id": 1,
+        "name": "Central Park",
+        "image": "https://lp-cms-production.imgix.net/2020-09/shutterstockRF_519864937.jpg",
+        "borough": "Manhattan",
+        "map": "https://goo.gl/maps/peyBcJTuxSv286Ei9",
+        "transit": {
+          "subway": ["1", "2", "3", "A", "B", "C", "D", "N", "Q", "R", "W"],
+          "bus": ["M1", "M2", "M3", "M4", "M5", "M7", "M10", "M20", "M66", "M72", "M79", "M86", "M96"],
+          "ferry" : [],
+          "staten island railroad": []
+        },
+        "features": [
+          "Belvedere Castle",
+          "Strawberry Fields, a living memorial to John Lennon",
+          "The Mall, a walkway that runs through the middle of the Park from 66th to 72nd street"
+        ]
+      },
+      {
+          "id": 2,
+          "name": "Bowling Green",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Bowling_Green_Fence_and_Park_01.jpg",
+          "borough": "Manhattan",
+          "map": "https://goo.gl/maps/nxu4xKXqfaRZFbTX7",
+          "transit": {
+            "subway": ["1", "4", "5", "R", "W"],
+            "bus": ["M20", "M55"],
+            "ferry" : [],
+            "staten island railroad": []
+          },
+          "features": [
+            "Oldest park in New York City",
+            "Charging Bull sculpture",
+            "Surrounded by its original 18th-century fence"
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Madison Square Park",
+          "image": "https://experiencenomad.com/wp-content/uploads/2012/06/map-sights-madsqpark-1.jpg",
+          "borough": "Manhattan",
+          "map": "https://goo.gl/maps/NnxpVjnvCqYgbBjy6",
+          "transit": {
+            "subway": ["6", "R", "W"],
+            "bus": ["M1", "M2", "M3", "M23", "M55"],
+            "ferry" : [],
+            "staten island railroad": []
+          },
+          "features": [
+            "Near the Flatiron Building",
+            "Art installations",
+            "Dog run and playground"
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Bryant Park",
+          "image": "https://bryantpark.org/assets/uploads/images/meta/_resize/bryant-park-fountain_lores_2017-09-25_Colin-Miller_resize_2b49adef6caef881fae37e35b1797485.jpg",
+          "borough": "Manhattan",
+          "map": "https://goo.gl/maps/kJz9uoDcgrLfUsfa6",
+          "transit": {
+            "subway": ["7", "B", "D", "F", "M"],
+            "bus": ["M1", "M2", "M3", "M4", "M5", "M7", "M42", "M55"],
+            "ferry" : [],
+            "staten island railroad": []
+          },
+          "features": [
+            "Ice skating rink during the winter",
+            "Movies on the lawn during the summer",
+            "Le Carousel"
+          ]
+        },
+        {
+          "id": 5,
+          "name": "Riverside Park",
+          "image": "https://riversideparknyc.org/wp-content/uploads/2022/02/DSC_0051-1613x1080.jpg",
+          "borough": "Manhattan",
+          "map": "https://goo.gl/maps/XE9hWpVXFs8W8Ss5A",
+          "transit": {
+            "subway": ["1", "2", "3"],
+            "bus": ["M5", "M11", "M79", "Bx15", "Bx19"],
+            "ferry" : [],
+            "staten island railroad": []
+          },
+          "features": [
+            "Views of the Hudson River",
+            "Bike paths on the Manhattan Waterfront Greenway",
+            "Sport courts"
+          ]
+        },
+        {
+          "id": 6,
+          "name": "The High Line",
+          "image": "https://edc.nyc/sites/default/files/styles/inline_image_large/public/2019-06/projects-the-highline-photo-brittany-petronella-nyc-and-company-03.jpg?itok=RFxfeCRQ",
+          "borough": "Manhattan",
+          "map": "https://goo.gl/maps/oSxpuXnF8mFhKQ787",
+          "transit": {
+            "subway": ["A", "C", "E", "L"],
+            "bus": ["M11", "M12", "M14", "M23"],
+            "ferry" : [],
+            "staten island railroad": []
+          },
+          "features": [
+            "Built on a once-abandoned elevated rail line",
+            "10th Avenue Square and Overlook",
+            "Inspired by the 2.9 mile long Coulée verte (tree-lined walkway), a similar project in Paris completed in 1993"
+          ]
+        },
+        {
+          "id": 7,
+          "name": "Forest Park",
+          "image": "https://dialannmag.files.wordpress.com/2014/01/cam00830.jpg",
+          "borough": "Queens",
+          "map": "https://goo.gl/maps/yQEfTgH4CJnDtS8w5",
+          "transit": {
+            "subway": ["J", "Z"],
+            "bus": ["Q37", "Q54", "Q55", "Q56", "B13"],
+            "ferry" : [],
+            "staten island railroad": []
+          },
+          "features": [
+            "110-acre, 67-par golf course",
+            "Second oldest carousel in Queens",
+            "Forest Park Greenhouse",
+            "Designed by Frederick Law Olmsted, the same person who is responsible for Central Park and Prospect Park"
+          ]
+        },
+        {
+          "id": 8,
+          "name": "Astoria Park",
+          "image": "https://www.nycgo.com/images/venues/3696/astoriapark019_buglewicz_mg_4254__large.jpg",
+          "borough": "Queens",
+          "map": "https://goo.gl/maps/2RVPJenjnArB5sF39",
+          "transit": {
+            "subway": ["N", "W"],
+            "bus": ["Q69", "Q100"],
+            "ferry" : ["AS"],
+            "staten island railroad": []
+          },
+          "features": [
+            "New York City's oldest and largest swimming pool",
+            "Views from underneath the Robert F. Kennedy and Hell Gate Bridges",
+            "14 tennis courts"
+          ]
+        },
+        {
+          "id": 9,
+          "name": "Flushing Meadows Corona Park",
+          "image": "https://www.nycgo.com/images/venues/1169/unisphere_flushing-meadows-corona-park-_queens_shelli_weiler-20190829_0129.jpg",
+          "borough": "Queens",
+          "map": "https://goo.gl/maps/ueMNXcytHDF56da26",
+          "transit": {
+            "subway": ["7", "E", "F"],
+            "bus": ["Q48", "Q58", "Q64", "Q88"],
+            "ferry" : [],
+            "staten island railroad": []
+          },
+          "features": [
+            "The largest park in Queens (and fourth largest park in all of New York City)",
+            "USTA Billie Jean King National Tennis Center (home of the US Open)",
+            "Citi Field, home to the Mets"
+          ]
+        },
+        {
+          "id": 10,
+          "name": "Kissena Park",
+          "image": "https://assets.dnainfo.com/generated/photo/2015/08/kissena-lake-1439916500.jpg/extralarge.jpg",
+          "borough": "Queens",
+          "map": "https://goo.gl/maps/L9oGgoCiFsPWo3rx5",
+          "transit": {
+            "subway": [],
+            "bus": ["Q17", "Q25", "Q34", "Q65"],
+            "ferry" : [],
+            "staten island railroad": []
+          },
+          "features": [
+            "Kissena Lake, flanked by weeping willows and shady trees",
+            "The Kissena Park Velodrome for speed bicycling",
+            "Was originally part of a tree nursery operated by Samuel Parsons in the late 19th century"
+          ]
+        },
+        {
+          "id": 11,
+          "name": "Hunter's Point South Park",
+          "image": "https://images.adsttc.com/media/images/5bab/9036/f197/cca2/3c00/0a30/newsletter/Hunters_Point_Phase_2_-_David_Lloyd_-0902.jpg?1537970191",
+          "borough": "Queens",
+          "map": "https://goo.gl/maps/VS2PmJ4cAiJmmsdA9",
+          "transit": {
+            "subway": ["7"],
+            "bus": ["Q103"],
+            "ferry" : ["ER", "AS"],
+            "staten island railroad": []
+          },
+          "features": [
+            "Previously an abandoned post-industrial area in Long Island City",
+            "A 30-foot-tall cantilevered platform for viewing the skyline and waterfront",
+            "13,000 square foot pavilion"
+          ]
+        },
+        {
+          "id": 12,
+          "name": "Van Cortlandt Park",
+          "image": "https://lirp.cdn-website.com/d22fd831/dms3rep/multi/opt/img-lake-1254x749-960w.jpg",
+          "borough": "Bronx",
+          "map": "https://goo.gl/maps/js5ziPWr8BPjJBW48",
+          "transit": {
+            "subway": ["1", "4"],
+            "bus": ["Bx3", "Bx9", "Bx10", "Bx16", "Bx34"],
+            "ferry" : [],
+            "staten island railroad": []
+          },
+          "features": [
+            "Third-largest park in New York City",
+            "Nation's first public golf course (opened in 1895)",
+            "Van Cortlandt Lake, the Bronx's largest freshwater lake"
+          ]
+        },
+        {
+          "id": 13,
+          "name": "Pelham Bay Park",
+          "image": "https://www.seenewyork.nyc/wp-content/uploads/2016/05/Pelham-Bay-Park.jpg",
+          "borough": "Bronx",
+          "map": "https://goo.gl/maps/61xpFSx7JwLTwyCw8",
+          "transit": {
+            "subway": ["6"],
+            "bus": ["Bx5", "Bx12", "Bx23", "Bx29"],
+            "ferry" : [],
+            "staten island railroad": []
+          },
+          "features": [
+            "Largest park in New York City, more than 3 times the size of Manhattan's Central Park",
+            "Orchard Beach",
+            "The Bartow-Pell Mansion"
+          ]
+        },
+        {
+          "id": 14,
+          "name": "Ferry Point Park",
+          "image": "https://greatecology.com/wp-content/uploads/2020/03/TM-Render-draft-scaled.jpg",
+          "borough": "Bronx",
+          "map": "https://goo.gl/maps/RXTR8RsczFMP3vTbA",
+          "transit": {
+            "subway": [],
+            "bus": ["Bx42"],
+            "ferry" : ["SV"],
+            "staten island railroad": []
+          },
+          "features": [
+            "Views of the East River and Long Island Sound, the Manhattan skyline, and of the Whitestone and Throgs Neck Bridges",
+            "9/11 Living Memorial Forest and Hilltop Grove",
+            "Named after the Ferris family, who were 18th-century residents of Throggs Neck"
+          ]
+        },
+        {
+          "id": 15,
+          "name": "Crotona Park",
+          "image": "https://images.squarespace-cdn.com/content/v1/5a97184fe74940324bbabdd7/1542826441695-WWMN5XDQ33KIMQUVA2P3/IMG_0032.jpg?format=1000w",
+          "borough": "Bronx",
+          "map": "https://goo.gl/maps/ZqkRrvuRnN6teRCg6",
+          "transit": {
+            "subway": ["2", "5"],
+            "bus": ["Bx11", "Bx15", "Bx17", "Bx19", "Bx21"],
+            "ferry" : [],
+            "staten island railroad": []
+          },
+          "features": [
+            "Nearly 30 different species of trees",
+            "Contains the Bronx's largest swimming pool",
+            "Name comes from Croton, the Greek colony famous for its Olympic athletes"
+          ]
+        },
+        {
+          "id": 16,
+          "name": "Bronx Park",
+          "image": "https://cdn.vox-cdn.com/thumbor/gT-LvCNjksBoq8LX_Q8HSzdYL6I=/0x0:1500x1001/1200x0/filters:focal(0x0:1500x1001):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/6547545/19_kensinger_bronx_river_DSC_5705.0.jpg",
+          "borough": "Bronx",
+          "map": "https://goo.gl/maps/e5MVMh7T4LuVMGGc6",
+          "transit": {
+            "subway": ["2", "5"],
+            "bus": ["Bx12", "Bx19", "Bx22", "Bx25", "Bx26", "Bx30"],
+            "ferry" : [],
+            "staten island railroad": []
+          },
+          "features": [
+            "Bronx Zoo",
+            "New York Botanical Garden",
+            "Surrounds a 2 mile stretch of the Bronx River"
+          ]
+        },
+        {
+          "id": 17,
+          "name": "Prospect Park",
+          "image": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/long-meadow-prospect-park-brooklyn-nick-difi.jpg",
+          "borough": "Brooklyn",
+          "map": "https://goo.gl/maps/xuVCafso4kyHtx3X8",
+          "transit": {
+            "subway": ["2", "3", "4", "B", "F", "G", "Q"],
+            "bus": ["B12", "B16", "B41", "B43", "B48", "B61", "B67", "B68", "B69"],
+            "ferry" : [],
+            "staten island railroad": []
+          },
+          "features": [
+            "Prospect Park Bandshell hosts concerts",
+            "Prospect Park Zoo",
+            "Endale Arch, one of the first architectural elements constructed in Prospect Park"
+          ]
+        },
+        {
+          "id": 18,
+          "name": "Sunset Park",
+          "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/56/a4/fe/the-city-at-sunset-park.jpg?w=1200&h=-1&s=1",
+          "borough": "Brooklyn",
+          "map": "https://goo.gl/maps/3r9Lm51g5aq9DHXj8",
+          "transit": {
+            "subway": ["D", "N", "R"],
+            "bus": ["B35", "B63", "B70"],
+            "ferry" : [],
+            "staten island railroad": []
+          },
+          "features": [
+            "Views of the Statue of Liberty, Brooklyn neighborhoods, Staten Island and New Jersey from the park's highest point",
+            "Neoclassical/Art Deco style pool that has been open since 1936",
+            "September 11 Living Memorial Grove"
+          ]
+        },
+        {
+          "id": 19,
+          "name": "Maria Hernandez Park",
+          "image": "https://brooklyneagle.com/wp-content/uploads/2018/11/maria-hernandez-park-1024x643.jpg",
+          "borough": "Brooklyn",
+          "map": "https://goo.gl/maps/dfvhqg3usfbN5ez96",
+          "transit": {
+            "subway": ["L"],
+            "bus": ["B38", "B57", "B60"],
+            "ferry" : [],
+            "staten island railroad": []
+          },
+          "features": [
+            "Largest community park in Bushwick",
+            "Renamed for a community leader who gave her life in the fight to rid her block of drug dealers",
+            "Renovated basketball court"
+          ]
+        },
+        {
+          "id": 20,
+          "name": "Coney Island Beach & Boardwalk",
+          "image": "https://www.nycgovparks.org/photo_gallery/full_size/25097.jpg",
+          "borough": "Brooklyn",
+          "map": "https://goo.gl/maps/CwxRWQZ9pbC6R2Np6",
+          "transit": {
+            "subway": ["D", "F", "N", "Q"],
+            "bus": ["B36", "B74"],
+            "ferry" : [],
+            "staten island railroad": []
+          },
+          "features": [
+            "Riegelmann Boardwalk",
+            "New York Aquarium",
+            "Maimonedes Park baseball stadium, home of the minor league Mets (the Brooklyn Cyclones)"
+          ]
+        },
+        {
+          "id": 21,
+          "name": "Brooklyn Bridge Park",
+          "image": "https://media.timeout.com/images/105683556/image.jpg",
+          "borough": "Brooklyn",
+          "map": "https://goo.gl/maps/aRnjbUGz2gXGAxHz9",
+          "transit": {
+            "subway": ["2", "3", "A", "C"],
+            "bus": ["B25"],
+            "ferry" : ["ER", "SB"],
+            "staten island railroad": []
+          },
+          "features": [
+            "Views of Manhattan from under the Brooklyn Bridge",
+            "6 piers",
+            "Historic Fulton Ferry Landing"
+          ]
+        },
+        {
+          "id": 22,
+          "name": "Alice Austen Park",
+          "image": "https://assets.simpleviewinc.com/simpleview/image/upload/crm/newyorkstate/Alice-Austen-House-Outside-08012020_161756_473E927C-ABAA-4CB2-AD1202D7A6132CF3_fe1a30cb-dc5d-cfed-71be09803a19883e.jpg",
+          "borough": "Staten Island",
+          "map": "https://goo.gl/maps/QCoArJTPmRF5jMTb6",
+          "transit": {
+            "subway": [],
+            "bus": ["S51", "S52", "S78", "S81"],
+            "ferry" : [],
+            "staten island railroad": ["Clifton"]
+          },
+          "features": [
+            "Alice Austen House Museum",
+            "Buono Beach"
+          ]
+        },
+        {
+          "id": 23,
+          "name": "Silver Lake Park",
+          "image": "https://www.nycgovparks.org/photo_gallery/full_size/22699.jpg",
+          "borough": "Staten Island",
+          "map": "https://goo.gl/maps/k4WdKvXbjTuLKELJ6",
+          "transit": {
+            "subway": [],
+            "bus": ["S61", "S62", "S66"],
+            "ferry" : [],
+            "staten island railroad": []
+          },
+          "features": [
+            "Created as Staten Island's response to Manhattan's Central Park and Brooklyn's Prospect Park",
+            "Silver Lake Reservoir, the endpoint of the Catskill Water Supply that brings 40% of New York City's water down from the Catskill Mountains",
+            "Recreational facilities such as tennis courts and baseball fields"
+          ]
+        },
+        {
+          "id": 24,
+          "name": "Franklin D. Roosevelt Boardwalk and Beach",
+          "image": "https://topbrunchspots.com/wp-content/uploads/2022/05/AF1QipOSBb8QuChdotaRATP6BGTaKg-ESvUvCg_3JfTJw1600-h1000-k-no.jpeg",
+          "borough": "Staten Island",
+          "map": "https://goo.gl/maps/vSLqLXFTG2FVBjzWA",
+          "transit": {
+            "subway": [],
+            "bus": ["S51", "S52", "S78", "S79", "S81"],
+            "ferry" : [],
+            "staten island railroad": ["Dongan Hills", "Jefferson Ave", "Grant City"]
+          },
+          "features": [
+            "2.5-mile boardwalk and beach area",
+            "One of New York City's four spacious beachfront areas",
+            "Contains numerous recreational facilities, including a skate park"
+          ]
+        },
+        {
+          "id": 25,
+          "name": "Great Kills Park",
+          "image": "https://www.nycgovparks.org/photo_gallery/full_size/24470.jpg",
+          "borough": "Staten Island",
+          "map": "https://goo.gl/maps/EKuWi9EEHot7WJRo9",
+          "transit": {
+            "subway": [],
+            "bus": ["S76", "S78", "S79"],
+            "ferry" : [],
+            "staten island railroad": ["Bay Terrace"]
+          },
+          "features": [
+            "Contains four beaches: New Dorp Beach, Cedar Grove Beach, Oakwood Beach, and Fox Beach",
+            "New Dorp Beach was once the home of the second permanent European settlement in Staten Island",
+            "Beaches and wetlands help fight against erosion and flooding in nearby neighborhoods", 
+            "Great Kills Park became part of the National Park Service in 1972"
+          ]
+        },
+        {
+          "id": 26,
+          "name": "Conference House Park",
+          "image": "https://www.nycgovparks.org/photo_gallery/full_size/10154.jpg",
+          "borough": "Staten Island",
+          "map": "https://goo.gl/maps/mzufHK6A9gVZCVFWA",
+          "transit": {
+            "subway": [],
+            "bus": ["S59", "S78"],
+            "ferry" : [],
+            "staten island railroad": ["Tottenville"]
+          },
+          "features": [
+            "Conference House, a grand stone manor house built in 1680, named for the unsuccessful Revolutionary War peace conference between the Americans and the English",
+            "Located at the southernmost point of New York State"
+          ]
+        }
+    ]
+  }
