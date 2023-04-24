@@ -4,7 +4,7 @@ import NewParkForm from './NewParkForm'
 import Search from './Search'
 import { Link } from 'react-router-dom'
 
-function ParkContainer() {
+function ParkContainer({ parks }) {
 
   const [name, setName] = useState("")
   const [image, setImage] = useState("")
@@ -91,9 +91,13 @@ function ParkContainer() {
          </div>
          <div className="right-screen">
           <h3>Parks Portal</h3>
+          <div>
+            {parks.map((park) => {
+              return <ParkCard park={park} key={park.name} />
+            })}
+          </div>
          </div>
         </div>
-        {/* Will serve as main portal and render main cards and new park form */}
     </div>
   )
 }

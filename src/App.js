@@ -35,7 +35,7 @@ function App() {
       {/* Browser Routes to components will be down here */}
       <Routes>
         <Route path='/' element={<Home parks={parksData} />}></Route>
-        <Route path='/parks-portal' element={<ParkContainer />}></Route>
+        <Route path='/parks-portal' element={<ParkContainer parks={parksData} />}></Route>
         <Route path='/my-parks' element={<VisitedList />}></Route>
         <Route path='/park/:id' element={<ParkCard />} ></Route>
       </Routes>
