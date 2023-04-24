@@ -2,6 +2,7 @@ import React from 'react'
 import ParkCard from './ParkCard'
 import NewParkForm from './NewParkForm'
 import Search from './Search'
+import { Link } from 'react-router-dom'
 
 function ParkContainer() {
   return (
