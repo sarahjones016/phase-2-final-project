@@ -1,0 +1,15 @@
+.current-slide {
+    position: relative;
+}
+
+.current-slide img {
+    width: 100%;
+    height: auto;
+}
+
+.current-slide h1 {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 3em;
+}
