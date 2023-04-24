@@ -1,6 +1,6 @@
 import React from 'react'
 import './Slider.css'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 function HomeSlider({ parks }) {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -11,7 +11,16 @@ function HomeSlider({ parks }) {
             image: park.image
         }
     })
-    console.log(slideData)
+
+    useEffect(() => {
+        setTimeout(() => {
+            if (currentSlide < slideData.length - 1) {
+                setCurrentSlide(currentSlide + 1)
+            } else {
+                setCurrentSlide(0);
+            }
+        }, 5000)
+    }, [currentSlide])
 
   return (
     <div className='slider-container'>
