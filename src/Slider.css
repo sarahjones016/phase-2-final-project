@@ -4,6 +4,7 @@
 
 .current-slide {
     position: relative;
+    overflow: hidden;
 }
 
 .current-slide img {
