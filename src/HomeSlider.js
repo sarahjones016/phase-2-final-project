@@ -13,6 +13,10 @@ function HomeSlider({ parks }) {
     })
 
     useEffect(() => {
+        setCurrentSlide(0)
+    }, [])
+
+    useEffect(() => {
         setTimeout(() => {
             if (currentSlide < slideData.length - 1) {
                 setCurrentSlide(currentSlide + 1)

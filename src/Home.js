@@ -1,15 +1,24 @@
 import React from 'react';
 import HomeSlider from './HomeSlider';
+import { Link } from 'react-router-dom';
 
 function Home({ parks }) {
   return (
-    <div>
-        <h1>Welcome to Patrick and Sarah's Website!</h1>
-        <p>This paragraph will contain a little description of what we're doing here!</p>
-        {/* Will contain buttons that route to portal and visited pages  */}
+    <div className='homepage'>
+        <div className='welcome'>
+          <h1>Welcome to NYC Parks!</h1><br></br>
+          <p>Your official guide to the true gems of NYC.  Explore the beautiful and historic parks of the City.  Share your favorite spots and connect!  Click below to start exploring!</p><br></br>
+          
+          <Link to='parks-portal'>
+            <button className='home-btn'>Explore the Parks</button>
+          </Link>
+          <Link to='my-parks'>
+            <button className='home-btn'>My Parks</button>
+          </Link>
+          
+        </div>
+        
         <HomeSlider parks={parks} />
-        <button>Get Started</button>
-        <button>My Parks</button>
     </div>
   )
 }
