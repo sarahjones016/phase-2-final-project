@@ -48,9 +48,54 @@ a {
   color: blue;
 }
 
-@media all and (max-width: 480px) {
-  
+.parks-container-screens {
+  display: flex;
+  height: 99vh;
+  width: 100%
 }
+
+.left-screen {
+  /* border: 1px solid red; */
+  height: 100%;
+  flex: 30;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.right-screen {
+  border: 1px solid blue;
+  height: 100%;
+  flex: 70;
+  padding: 2rem;
+}
+
+.new-park-form {
+  box-sizing: border-box;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: hsl(0, 0%, 100%);
+  border: 4px solid hsl(0, 0%, 90%);
+  gap: 2rem;
+}
+
+.form-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.form-button {
+  padding: 2rem;
+}
+
+.form-header {
+  padding: 2rem;
+}
+
+
+/* @media all and (max-width: 480px) {
+
+} */
 
 
 
