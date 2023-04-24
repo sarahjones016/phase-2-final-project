@@ -9,13 +9,18 @@ import { Route, Routes, Link } from 'react-router-dom';
 function App() {
   return (
     <div className="App">
-      <h1>NYC Parks Portal</h1>
-      <nav className="nav-bar">
-        {/* Links will go here */}
-        <Link to='/'>Home</Link>
-        <Link to='parks-portal'>Parks Portal</Link>
-        <Link to='my-parks'>My Parks</Link>
-      </nav>
+      {/* <h1>NYC Parks Portal</h1> */}
+      <header className="header">
+        <h2>NYC Parks</h2>
+        <nav>
+          <ul className="nav-bar">
+            {/* Links will go here */}
+            <li><Link to='/'>Home</Link></li>
+            <li><Link to='parks-portal'>Parks Portal</Link></li>
+            <li><Link to='my-parks'>My Parks</Link></li>
+          </ul>
+        </nav>
+      </header>
 
       {/* Browser Routes to components will be down here */}
       <Routes>
