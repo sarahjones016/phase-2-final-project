@@ -5,8 +5,18 @@ import VisitedList from './VisitedList';
 import ParkCard from './ParkCard';
 import Error from './Error';
 import { Route, Routes, Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 
 function App() {
+  const [parksData, setParksData] = useState([])
+
+  useEffect(() => {
+    fetch('http://localhost:3000/parks')
+    .then(resp => resp.json())
+    .then(data => setParksData(data))
+  }, [])
+
+
   return (
     <div className="App">
       <h1>NYC Parks Portal</h1>
@@ -19,7 +29,7 @@ function App() {
 
       {/* Browser Routes to components will be down here */}
       <Routes>
-        <Route path='/' element={<Home />}></Route>
+        <Route path='/' element={<Home parks={parksData} />}></Route>
         <Route path='/parks-portal' element={<ParkContainer />}></Route>
         <Route path='/my-parks' element={<VisitedList />}></Route>
         <Route path='/park/:id' element={<ParkCard />} ></Route>
