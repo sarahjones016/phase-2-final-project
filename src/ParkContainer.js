@@ -20,7 +20,7 @@ function ParkContainer() {
          <div className="left-screen">
           <div className="form-header">
             <h3>Add New Park</h3>
-            <button onClick={handleFormClick}>{showForm ? "Hide Form" : "Show Form"}</button>
+            <button className="form-btn" onClick={handleFormClick}>{showForm ? "Hide Form" : "Show Form"}</button>
           </div>
             {showForm ? <Form /> : null}
          </div>

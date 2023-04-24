@@ -66,8 +66,8 @@ function Form() {
               ></input>
           </div>
             
-            <div className="form-button">
-              <button>Submit</button>
+            <div className="form-button-div">
+              <button className="form-btn">Submit</button>
             </div>  
               
           </form>

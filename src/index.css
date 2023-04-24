@@ -57,15 +57,14 @@ a {
 .left-screen {
   /* border: 1px solid red; */
   height: 100%;
-  flex: 30;
-  display: flex;
-  flex-wrap: wrap;
+  flex: 25;
+  display: inline-block
 }
 
 .right-screen {
   border: 1px solid blue;
   height: 100%;
-  flex: 70;
+  flex: 75;
   padding: 2rem;
 }
 
@@ -75,7 +74,6 @@ a {
   border-radius: 1rem;
   background-color: hsl(0, 0%, 100%);
   border: 4px solid hsl(0, 0%, 90%);
-  gap: 2rem;
 }
 
 .form-content {
@@ -84,7 +82,7 @@ a {
   gap: 2rem;
 }
 
-.form-button {
+.form-button-div {
   padding: 2rem;
 }
 
@@ -92,6 +90,16 @@ a {
   padding: 2rem;
 }
 
+.form-btn {
+  background-color: aquamarine;
+  font-size: 1em;
+  padding: 2%;
+  margin-right: 0.5vw;
+}
+
+.form-btn:hover {
+  background-color: aqua;
+}
 
 /* @media all and (max-width: 480px) {
 
