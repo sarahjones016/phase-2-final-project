@@ -29,7 +29,7 @@ function ParkContainer({ parks }) {
           <h3>Parks Portal</h3>
           <div className='park-portal'>
             {parks.map((park) => {
-              return <ParkCard park={park} key={park.name} />
+              return <ParkCard park={park} key={park.name}/>
             })}
           </div>
          </div>

@@ -6,6 +6,7 @@ import ParkPage from './ParkPage';
 import Error from './Error';
 import { Route, Routes, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import ParkDetails from './ParkDetails';
 
 function App() {
   const [parksData, setParksData] = useState([])
@@ -37,7 +38,7 @@ function App() {
         <Route path='/' element={<Home parks={parksData} />}></Route>
         <Route path='/parks-portal' element={<ParkContainer parks={parksData} />}></Route>
         <Route path='/my-parks' element={<VisitedList />}></Route>
-        <Route path='/park/:id' element={<ParkPage />} ></Route>
+        <Route path='/parks/:id' element={<ParkDetails />} ></Route>
       </Routes>
     </div>
   );
