@@ -91,7 +91,7 @@ function ParkContainer({ parks }) {
          </div>
          <div className="right-screen">
           <h3>Parks Portal</h3>
-          <div>
+          <div className='park-portal'>
             {parks.map((park) => {
               return <ParkCard park={park} key={park.name} />
             })}
