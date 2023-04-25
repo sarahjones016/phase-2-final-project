@@ -1,7 +1,13 @@
 import React, { useState } from 'react'
+import { useNavigate } from "react-router-dom"
 
 function ParkCard({ park, onMyParks }) {
   const [parkVisited, setParkVisited] = useState(park.visited)
+
+  const navigate = useNavigate()
+  function handleCardClick() {
+    navigate(`/parks/${park.id}`, { state: park})
+  }
 
   function handleClick() {
     setParkVisited(!parkVisited)
@@ -20,7 +26,7 @@ function ParkCard({ park, onMyParks }) {
   }
 
   return (
-    <div className='park-card'>
+    <div onClick={handleCardClick} className='park-card'>
         <img src={park.image} alt={park.name} />
         <h3>{park.name}</h3>
         <p>{park.borough}</p>

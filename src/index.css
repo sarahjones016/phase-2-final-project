@@ -88,7 +88,6 @@ a {
 
 .form-header {
   padding: 2rem;
-  
 }
 
 .form-btn {
@@ -105,6 +104,73 @@ a {
 #drop-down {
   margin: 1rem;
 }
+
+.parkDetails {
+  display: flex;
+  height: 99vh;
+  width: 100%;
+}
+
+.left-panel {
+  height: 100%;
+  flex: 40;
+  display: inline-block;
+  padding: 2rem;
+}
+
+.right-panel {
+  height: 100%;
+  flex: 60;
+  padding: 2rem;
+}
+
+.right-panel img {
+  width: 100%;
+}
+
+.park-basics {
+  padding: 2rem;
+}
+
+.transit {
+  padding: 2rem;
+}
+
+.features {
+  padding: 2rem;
+}
+
+.park-content {
+  text-align: left;
+}
+
+.subway {
+  list-style: none;
+}
+
+.subway li {
+  display: inline-block;
+  padding: 0px 7px;
+}
+
+.bus {
+  list-style: none;
+}
+
+.bus li {
+  display: inline-block;
+  padding: 0px 7px;
+}
+
+.ferry {
+  list-style: none;
+}
+
+.ferry li {
+  display: inline-block;
+  padding: 0px 7px;
+}
+
 
 /* @media all and (max-width: 480px) {
 
