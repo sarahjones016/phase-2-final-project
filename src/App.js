@@ -24,10 +24,13 @@ function App() {
   }, [])
 
   function handleMyParks(park) {
-    
-      setMyParks([...myParks, park])
-    
-    
+      if (park.visited) {
+        setMyParks([...myParks, park])
+      } else {
+        setMyParks(myParks.filter((item) => {
+          return item.id !== park.id;
+        }))
+      }
   }
 
 

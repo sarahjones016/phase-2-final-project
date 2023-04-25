@@ -20,6 +20,7 @@ function ParkCard({ park, onMyParks }) {
     .then(resp => resp.json())
     .then(data => {
       console.log(data)
+      onMyParks(data);
     })
   }
 

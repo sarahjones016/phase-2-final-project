@@ -42,7 +42,7 @@
         "Strawberry Fields, a living memorial to John Lennon",
         "The Mall, a walkway that runs through the middle of the Park from 66th to 72nd street"
       ],
-      "visited": true
+      "visited": false
     },
     {
       "id": 2,
@@ -130,7 +130,7 @@
         "Movies on the lawn during the summer",
         "Le Carousel"
       ],
-      "visited": false
+      "visited": true
     },
     {
       "id": 5,
