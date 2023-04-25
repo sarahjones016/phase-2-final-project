@@ -2,7 +2,7 @@ import './App.css';
 import Home from './Home';
 import ParkContainer from './ParkContainer';
 import VisitedList from './VisitedList';
-import ParkCard from './ParkCard';
+import ParkPage from './ParkPage';
 import Error from './Error';
 import { Route, Routes, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
@@ -37,7 +37,7 @@ function App() {
         <Route path='/' element={<Home parks={parksData} />}></Route>
         <Route path='/parks-portal' element={<ParkContainer parks={parksData} />}></Route>
         <Route path='/my-parks' element={<VisitedList />}></Route>
-        <Route path='/park/:id' element={<ParkCard />} ></Route>
+        <Route path='/park/:id' element={<ParkPage />} ></Route>
       </Routes>
     </div>
   );
