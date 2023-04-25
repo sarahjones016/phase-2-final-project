@@ -14,17 +14,20 @@ function App() {
   useEffect(() => {
     fetch('http://localhost:3000/parks')
     .then(resp => resp.json())
-    .then(data => setParksData(data))
+    .then((data) => {
+      setParksData(data)
+      const visitedParks = data.filter((park) => {
+        return park.visited === true;
+      })
+      setMyParks(visitedParks)
+    })
   }, [])
 
-  function addToMyParks(park, id) {
-    if (park.visited) {
+  function handleMyParks(park) {
+    
       setMyParks([...myParks, park])
-    } else {
-      setMyParks(myParks.filter((park) => {
-        return park.id !== id
-      }))
-    }
+    
+    
   }
 
 
@@ -46,8 +49,8 @@ function App() {
       {/* Browser Routes to components will be down here */}
       <Routes>
         <Route path='/' element={<Home parks={parksData} />}></Route>
-        <Route path='/parks-portal' element={<ParkContainer parks={parksData} onMyParks={addToMyParks} />}></Route>
-        <Route path='/my-parks' element={<VisitedList />}></Route>
+        <Route path='/parks-portal' element={<ParkContainer parks={parksData} onMyParks={handleMyParks} />}></Route>
+        <Route path='/my-parks' element={<VisitedList myParks={myParks} />}></Route>
         <Route path='/park/:id' element={<ParkPage />} ></Route>
       </Routes>
     </div>

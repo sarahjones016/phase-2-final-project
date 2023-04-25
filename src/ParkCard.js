@@ -7,19 +7,20 @@ function ParkCard({ park, onMyParks }) {
 
   function handleClick() {
     setParkVisited(!parkVisited)
-    onMyParks(park, park.id)
 
-    // fetch(`http://localhost:3000/parks/${park.id}`, {
-    //   method: "PATCH",
-    //   headers: {
-    //     "Content-Type": "application/json"
-    //   },
-    //   body: JSON.stringify({
-    //     visited: parkVisited 
-    //   })
-    // })
-    // .then(resp => resp.json())
-    // .then(data => console.log(data))
+    fetch(`http://localhost:3000/parks/${park.id}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        visited: !park.visited 
+      })
+    })
+    .then(resp => resp.json())
+    .then(data => {
+      console.log(data)
+    })
   }
 
   return (
