@@ -1,10 +1,12 @@
 import React from 'react'
 
-function ParkCard() {
+function ParkCard({ park }) {
+  
   return (
-    <div>
-        <h1>Park Card</h1>
-        {/* Will contain park image, name, features, transit and visited button */}
+    <div className='park-card'>
+        <img src={park.image} alt={park.name} />
+        <h3>{park.name}</h3>
+        <p>{park.borough}</p>
     </div>
   )
 }

@@ -25,4 +25,23 @@
   background-color: aqua;
 }
 
+.park-card {
+  width: 25%;
+  height: 25%;
+  margin: 1rem;
+  padding: 1rem;
+  border: 3px dashed black;
+}
 
+.park-card img {
+  width: 100%;
+  height: auto
+}
+
+.park-portal {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: left;
+}
