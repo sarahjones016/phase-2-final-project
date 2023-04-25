@@ -41,11 +41,11 @@ export default function Details() {
                             <h4>Transportation:</h4>
                             <div className="transit-options">
                                 <h5>Subway: </h5>
-                                    <ul>{subwayArray}</ul>
+                                    <ul className="subway">{subwayArray}</ul>
                                 <h5>Bus: </h5>
-                                    <ul>{busArray}</ul>
+                                    <ul className="bus">{busArray}</ul>
                                 <h5>Ferry: </h5>
-                                    <ul>{ferryArray}</ul>
+                                    <ul className="ferry">{ferryArray}</ul>
                             </div>
                         </div>
                         
