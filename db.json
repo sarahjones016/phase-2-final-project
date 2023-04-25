@@ -35,8 +35,7 @@
           "M86",
           "M96"
         ],
-        "ferry": [],
-        "sir": []
+        "ferry": []
       },
       "features": [
         "Belvedere Castle",
@@ -62,8 +61,7 @@
           "M20",
           "M55"
         ],
-        "ferry": [],
-        "sir": []
+        "ferry": []
       },
       "features": [
         "Oldest park in New York City",
@@ -90,8 +88,7 @@
           "M23",
           "M55"
         ],
-        "ferry": [],
-        "sir": []
+        "ferry": []
       },
       "features": [
         "Near the Flatiron Building",
@@ -123,8 +120,7 @@
           "M42",
           "M55"
         ],
-        "ferry": [],
-        "sir": []
+        "ferry": []
       },
       "features": [
         "Ice skating rink during the winter",
@@ -151,8 +147,7 @@
           "Bx15",
           "Bx19"
         ],
-        "ferry": [],
-        "sir": []
+        "ferry": []
       },
       "features": [
         "Views of the Hudson River",
@@ -179,8 +174,7 @@
           "M14",
           "M23"
         ],
-        "ferry": [],
-        "sir": []
+        "ferry": []
       },
       "features": [
         "Built on a once-abandoned elevated rail line",
@@ -206,8 +200,7 @@
           "Q56",
           "B13"
         ],
-        "ferry": [],
-        "sir": []
+        "ferry": []
       },
       "features": [
         "110-acre, 67-par golf course",
@@ -233,8 +226,7 @@
         ],
         "ferry": [
           "AS"
-        ],
-        "sir": []
+        ]
       },
       "features": [
         "New York City's oldest and largest swimming pool",
@@ -260,8 +252,7 @@
           "Q64",
           "Q88"
         ],
-        "ferry": [],
-        "sir": []
+        "ferry": []
       },
       "features": [
         "The largest park in Queens (and fourth largest park in all of New York City)",
@@ -283,8 +274,7 @@
           "Q34",
           "Q65"
         ],
-        "ferry": [],
-        "sir": []
+        "ferry": []
       },
       "features": [
         "Kissena Lake, flanked by weeping willows and shady trees",
@@ -308,8 +298,7 @@
         "ferry": [
           "ER",
           "AS"
-        ],
-        "sir": []
+        ]
       },
       "features": [
         "Previously an abandoned post-industrial area in Long Island City",
@@ -335,8 +324,7 @@
           "Bx16",
           "Bx34"
         ],
-        "ferry": [],
-        "sir": []
+        "ferry": []
       },
       "features": [
         "Third-largest park in New York City",
@@ -360,8 +348,7 @@
           "Bx23",
           "Bx29"
         ],
-        "ferry": [],
-        "sir": []
+        "ferry": []
       },
       "features": [
         "Largest park in New York City, more than 3 times the size of Manhattan's Central Park",
@@ -382,8 +369,7 @@
         ],
         "ferry": [
           "SV"
-        ],
-        "sir": []
+        ]
       },
       "features": [
         "Views of the East River and Long Island Sound, the Manhattan skyline, and of the Whitestone and Throgs Neck Bridges",
@@ -409,8 +395,7 @@
           "Bx19",
           "Bx21"
         ],
-        "ferry": [],
-        "sir": []
+        "ferry": []
       },
       "features": [
         "Nearly 30 different species of trees",
@@ -437,8 +422,7 @@
           "Bx26",
           "Bx30"
         ],
-        "ferry": [],
-        "sir": []
+        "ferry": []
       },
       "features": [
         "Bronx Zoo",
@@ -473,8 +457,7 @@
           "B68",
           "B69"
         ],
-        "ferry": [],
-        "sir": []
+        "ferry": []
       },
       "features": [
         "Prospect Park Bandshell hosts concerts",
@@ -499,8 +482,7 @@
           "B63",
           "B70"
         ],
-        "ferry": [],
-        "sir": []
+        "ferry": []
       },
       "features": [
         "Views of the Statue of Liberty, Brooklyn neighborhoods, Staten Island and New Jersey from the park's highest point",
@@ -523,8 +505,7 @@
           "B57",
           "B60"
         ],
-        "ferry": [],
-        "sir": []
+        "ferry": []
       },
       "features": [
         "Largest community park in Bushwick",
@@ -549,8 +530,7 @@
           "B36",
           "B74"
         ],
-        "ferry": [],
-        "sir": []
+        "ferry": []
       },
       "features": [
         "Riegelmann Boardwalk",
@@ -577,8 +557,7 @@
         "ferry": [
           "ER",
           "SB"
-        ],
-        "sir": []
+        ]
       },
       "features": [
         "Views of Manhattan from under the Brooklyn Bridge",
@@ -593,17 +572,16 @@
       "borough": "Staten Island",
       "map": "https://goo.gl/maps/QCoArJTPmRF5jMTb6",
       "transit": {
-        "subway": [],
+        "subway": [
+          "SIR"
+        ],
         "bus": [
           "S51",
           "S52",
           "S78",
           "S81"
         ],
-        "ferry": [],
-        "sir": [
-          "Clifton"
-        ]
+        "ferry": []
       },
       "features": [
         "Alice Austen House Museum",
@@ -623,8 +601,7 @@
           "S62",
           "S66"
         ],
-        "ferry": [],
-        "sir": []
+        "ferry": []
       },
       "features": [
         "Created as Staten Island's response to Manhattan's Central Park and Brooklyn's Prospect Park",
@@ -639,7 +616,9 @@
       "borough": "Staten Island",
       "map": "https://goo.gl/maps/vSLqLXFTG2FVBjzWA",
       "transit": {
-        "subway": [],
+        "subway": [
+          "SIR"
+        ],
         "bus": [
           "S51",
           "S52",
@@ -647,12 +626,7 @@
           "S79",
           "S81"
         ],
-        "ferry": [],
-        "sir": [
-          "Dongan Hills",
-          "Jefferson Ave",
-          "Grant City"
-        ]
+        "ferry": []
       },
       "features": [
         "2.5-mile boardwalk and beach area",
@@ -667,16 +641,15 @@
       "borough": "Staten Island",
       "map": "https://goo.gl/maps/EKuWi9EEHot7WJRo9",
       "transit": {
-        "subway": [],
+        "subway": [
+          "SIR"
+        ],
         "bus": [
           "S76",
           "S78",
           "S79"
         ],
-        "ferry": [],
-        "sir": [
-          "Bay Terrace"
-        ]
+        "ferry": []
       },
       "features": [
         "Contains four beaches: New Dorp Beach, Cedar Grove Beach, Oakwood Beach, and Fox Beach",
@@ -692,15 +665,14 @@
       "borough": "Staten Island",
       "map": "https://goo.gl/maps/mzufHK6A9gVZCVFWA",
       "transit": {
-        "subway": [],
+        "subway": [
+          "SIR"
+        ],
         "bus": [
           "S59",
           "S78"
         ],
-        "ferry": [],
-        "sir": [
-          "Tottenville"
-        ]
+        "ferry": []
       },
       "features": [
         "Conference House, a grand stone manor house built in 1680, named for the unsuccessful Revolutionary War peace conference between the Americans and the English",
