@@ -6,7 +6,24 @@ function Form({addPark}) {
     const [image, setImage] = useState("")
     const [borough, setBorough] = useState("")
     const [map, setMap] = useState("")
+    const [subway, setSubway] = useState("")
+    const [ferry, setFerry] = useState("")
 
+    const [subwayArray, setSubwayArray] = useState([]);
+    const [ferryArray, setFerryArray] = useState([]);
+
+    function handleSubwayChange(e) {
+      let selected = e.target.value;
+      selected === "Select Line" ? setSubway("") : setSubway(e.target.value)
+      selected === "Select Line" ? setSubwayArray(subwayArray) : setSubwayArray([...subwayArray, selected])
+    }
+
+    function handleFerryChange(e) {
+      let selected = e.target.value;
+      selected === "Select Service" ? setFerry("") : setFerry(e.target.value)
+      selected === "Select Service" ? setFerryArray(ferryArray) : setFerryArray([...ferryArray, selected])
+    }
+    
     function handleParkSubmit(e) {
         e.preventDefault();
     
@@ -21,9 +38,9 @@ function Form({addPark}) {
             borough,
             map,
             transit: {
-              subway: [],
+              subway: subwayArray,
               bus: [],
-              ferry: []
+              ferry: ferryArray
             },
             features: [],
             visited: false,
@@ -71,8 +88,51 @@ function Form({addPark}) {
                 type="text"
                 onChange={(e) => setMap(e.target.value)}
               ></input>
-            </div>
             
+            <label>NYC Subway</label>
+              <select onChange={handleSubwayChange} value={subway}>
+                <option>Select Line</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>A</option>
+                <option>B</option>
+                <option>C</option>
+                <option>D</option>
+                <option>E</option>
+                <option>F</option>
+                <option>G</option>
+                <option>J</option>
+                <option>L</option>
+                <option>M</option>
+                <option>N</option>
+                <option>Q</option>
+                <option>R</option>
+                <option>W</option>
+                <option>SIR</option>
+              </select>
+              <div>{subwayArray}</div>
+              <div></div>
+
+              <label>NYC Ferry</label>
+              <select onChange={handleFerryChange} value={ferry}>
+                <option>Select Service</option>
+                <option>ER</option>
+                <option>RW</option>
+                <option>SB</option>
+                <option>AST</option>
+                <option>SV</option>
+                <option>SG</option>
+                <option>GI</option>
+              </select>
+              <div>{ferryArray}</div>
+              <div></div>
+            </div>
+
             <div className="form-button-div">
               <button className="form-btn">Submit</button>
             </div>  
