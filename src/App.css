@@ -30,7 +30,9 @@
   height: 25%;
   margin: 1rem;
   padding: 1rem;
-  border: 3px dashed black;
+  border-radius: 1rem;
+  background-color: hsl(0, 0%, 100%);
+  border: 4px solid hsl(0, 0%, 90%);
 }
 
 .park-card img {
@@ -44,4 +46,23 @@
   flex-wrap: wrap;
   align-items: center;
   text-align: left;
+}
+
+.not-visited {
+  background-color: aquamarine;
+  font-size: 0.75em;
+  padding: 1%;
+  margin-right: 0.5vw;  
+}
+
+.not-visited:hover {
+  background-color: aqua;
+}
+
+.visited {
+  background-color: azure;
+}
+
+.visted:hover {
+  background-color: grey;
 }
