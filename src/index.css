@@ -62,7 +62,7 @@ a {
 }
 
 .right-screen {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   height: 100%;
   flex: 75;
   padding: 2rem;
@@ -88,6 +88,7 @@ a {
 
 .form-header {
   padding: 2rem;
+  
 }
 
 .form-btn {
@@ -99,6 +100,10 @@ a {
 
 .form-btn:hover {
   background-color: aqua;
+}
+
+#drop-down {
+  margin: 1rem;
 }
 
 /* @media all and (max-width: 480px) {
