@@ -26,10 +26,12 @@ function ParkCard({ park, onMyParks }) {
   }
 
   return (
-    <div onClick={handleCardClick} className='park-card'>
-        <img src={park.image} alt={park.name} />
-        <h3>{park.name}</h3>
-        <p>{park.borough}</p>
+    <div className='park-card'>
+        <div onClick={handleCardClick}>
+          <img src={park.image} alt={park.name} />
+          <h3>{park.name}</h3>
+          <p>{park.borough}</p>
+        </div>
         {parkVisited ? <button onClick={handleClick} className='visited'>Remove from My Parks</button>
         : <button onClick={handleClick} className='not-visited'>Add to My Parks</button>}
     </div>
