@@ -8,9 +8,11 @@ function Form({addPark}) {
     const [map, setMap] = useState("")
     const [subway, setSubway] = useState("")
     const [ferry, setFerry] = useState("")
+    const [bus, setBus] = useState("");
 
     const [subwayArray, setSubwayArray] = useState([]);
     const [ferryArray, setFerryArray] = useState([]);
+    const [busArray, setBusArray] = useState([]);
 
     function handleSubwayChange(e) {
       let selected = e.target.value;
@@ -117,6 +119,12 @@ function Form({addPark}) {
               </select>
               <div>{subwayArray}</div>
               <div></div>
+
+              <label>NYC Bus</label>
+              <input value={bus} type="text" onChange={(e) => {
+                setBus(e.target.value)
+                console.log(e.target.value)
+                }}></input>
 
               <label>NYC Ferry</label>
               <select onChange={handleFerryChange} value={ferry}>
