@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-function Form() {
+function Form({addPark}) {
 
     const [name, setName] = useState("")
     const [image, setImage] = useState("")
@@ -20,17 +20,24 @@ function Form() {
             image,
             borough,
             map,
+            transit: {
+              subway: [],
+              bus: [],
+              ferry: []
+            },
+            features: [],
+            visited: false,
           })
         })
         .then((res) => res.json())
-        .then((data) => console.log(data))
+        .then((data) => addPark(data))
       }
 
   return (
     
     <div>
         <form onSubmit={handleParkSubmit} className="new-park-form">
-          <div className="form-content">
+          <div className="basic-form-content">
           <label>Park Name</label>
               <input 
                 value={name}
@@ -64,7 +71,7 @@ function Form() {
                 type="text"
                 onChange={(e) => setMap(e.target.value)}
               ></input>
-          </div>
+            </div>
             
             <div className="form-button-div">
               <button className="form-btn">Submit</button>

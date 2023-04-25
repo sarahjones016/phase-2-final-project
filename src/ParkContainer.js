@@ -1,11 +1,10 @@
 import React, {useState} from 'react'
 import ParkCard from './ParkCard'
-import NewParkForm from './NewParkForm'
 import Search from './Search'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import Form from './Form'
 
-function ParkContainer({ parks, onMyParks }) {
+function ParkContainer({ parks, onMyParks, addPark }) {
 
   const [showForm, setShowForm] = useState(false)
 
@@ -22,7 +21,7 @@ function ParkContainer({ parks, onMyParks }) {
             <h3>Add New Park</h3>
             <button id="drop-down" className="form-btn" onClick={handleFormClick}>{showForm ? "Hide Form" : "Show Form"}</button>
           </div>
-            {showForm ? <Form /> : null}
+            {showForm ? <Form addPark={addPark} /> : null}
          </div>
 
          <div className="right-screen">

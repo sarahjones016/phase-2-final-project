@@ -40,6 +40,9 @@ function App() {
       }
   }
 
+  function addPark(newPark) {
+    setParksData([...parksData, newPark])
+  }
 
   return (
     <div className="App">
@@ -59,7 +62,7 @@ function App() {
       {/* Browser Routes to components will be down here */}
       <Routes>
         <Route path='/' element={<Home parks={parksData} />}></Route>
-        <Route path='/parks-portal' element={<ParkContainer parks={parksData} onMyParks={handleMyParks} />}></Route>
+        <Route path='/parks-portal' element={<ParkContainer addPark={addPark} parks={parksData} onMyParks={handleMyParks} />}></Route>
         <Route path='/my-parks' element={<VisitedList myParks={myParks} onMyParks={handleMyParks} />}></Route>
         <Route path='/parks/:id' element={<ParkDetails />} ></Route>
       </Routes>
