@@ -4,7 +4,7 @@ import Search from './Search'
 // import { Link } from 'react-router-dom'
 import Form from './Form'
 
-function ParkContainer({ parks, onMyParks, addPark }) {
+function ParkContainer({ parks, onMyParks, addPark, search, onSearch, toggle, onToggle}) {
 
   const [showForm, setShowForm] = useState(false)
 
@@ -14,6 +14,10 @@ function ParkContainer({ parks, onMyParks, addPark }) {
 
   return (
     <div>
+        <div className="top-screen">
+          <Search search={search} onSearch={onSearch} toggle={toggle} onToggle={onToggle}/>
+        </div>
+
         <div className="parks-container-screens">
           
          <div className="left-screen">

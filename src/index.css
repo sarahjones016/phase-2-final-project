@@ -62,10 +62,42 @@ a {
 }
 
 .right-screen {
-  /* border: 1px solid blue; */
   height: 100%;
   flex: 75;
   padding: 2rem;
+}
+
+.top-screen {
+  /* background-color: rgba(246, 149, 149, 0.503); */
+  padding: 1rem;
+}
+
+.search-fields {
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: rgba(246, 149, 149, 0.503);
+  border: 4px solid hsl(0, 0%, 90%);
+}
+
+.filter-bar {
+  width: 75%;
+  /* background-color: aquamarine; */
+  border: solid black;
+  font-size: 1em;
+}
+
+.dropdown {
+  /* background-color: aquamarine; */
+  border: solid black;
+  font-size: 1em;
+}
+
+.filter-bar-div {
+  padding: 1rem;
+}
+
+.dropdown.div {
+  padding: 1rem;
 }
 
 .new-park-form {
