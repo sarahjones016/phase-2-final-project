@@ -10,12 +10,36 @@ import ParkDetails from './ParkDetails';
 
 function App() {
   const [parksData, setParksData] = useState([])
+  const [myParks, setMyParks] = useState([])
 
   useEffect(() => {
     fetch('http://localhost:3000/parks')
     .then(resp => resp.json())
-    .then(data => setParksData(data))
+    .then((data) => {
+      setParksData(data)
+      const visitedParks = data.filter((park) => {
+        return park.visited === true;
+      })
+      setMyParks(visitedParks)
+    })
   }, [])
+
+  function handleMyParks(park) {
+    setParksData(parksData.map((item) => {
+      if (item.id === park.id) {
+        return park;
+      } else {
+        return item;
+      }
+    }))  
+    if (park.visited) {
+        setMyParks([...myParks, park])
+      } else {
+        setMyParks(myParks.filter((item) => {
+          return item.id !== park.id;
+        }))
+      }
+  }
 
 
   return (
@@ -36,8 +60,8 @@ function App() {
       {/* Browser Routes to components will be down here */}
       <Routes>
         <Route path='/' element={<Home parks={parksData} />}></Route>
-        <Route path='/parks-portal' element={<ParkContainer parks={parksData} />}></Route>
-        <Route path='/my-parks' element={<VisitedList />}></Route>
+        <Route path='/parks-portal' element={<ParkContainer parks={parksData} onMyParks={handleMyParks} />}></Route>
+        <Route path='/my-parks' element={<VisitedList myParks={myParks} onMyParks={handleMyParks} />}></Route>
         <Route path='/parks/:id' element={<ParkDetails />} ></Route>
       </Routes>
     </div>

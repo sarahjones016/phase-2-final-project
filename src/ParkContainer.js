@@ -5,7 +5,7 @@ import Search from './Search'
 import { Link } from 'react-router-dom'
 import Form from './Form'
 
-function ParkContainer({ parks }) {
+function ParkContainer({ parks, onMyParks }) {
 
   const [showForm, setShowForm] = useState(false)
 
@@ -29,7 +29,7 @@ function ParkContainer({ parks }) {
           <h3>Parks Portal</h3>
           <div className='park-portal'>
             {parks.map((park) => {
-              return <ParkCard park={park} key={park.name}/>
+              return <ParkCard park={park} key={park.name} onMyParks={onMyParks} />
             })}
           </div>
          </div>

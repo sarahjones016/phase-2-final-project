@@ -41,7 +41,8 @@
         "Belvedere Castle",
         "Strawberry Fields, a living memorial to John Lennon",
         "The Mall, a walkway that runs through the middle of the Park from 66th to 72nd street"
-      ]
+      ],
+      "visited": false
     },
     {
       "id": 2,
@@ -67,7 +68,8 @@
         "Oldest park in New York City",
         "Charging Bull sculpture",
         "Surrounded by its original 18th-century fence"
-      ]
+      ],
+      "visited": false
     },
     {
       "id": 3,
@@ -94,7 +96,8 @@
         "Near the Flatiron Building",
         "Art installations",
         "Dog run and playground"
-      ]
+      ],
+      "visited": false
     },
     {
       "id": 4,
@@ -126,7 +129,8 @@
         "Ice skating rink during the winter",
         "Movies on the lawn during the summer",
         "Le Carousel"
-      ]
+      ],
+      "visited": false
     },
     {
       "id": 5,
@@ -153,7 +157,8 @@
         "Views of the Hudson River",
         "Bike paths on the Manhattan Waterfront Greenway",
         "Sport courts"
-      ]
+      ],
+      "visited": false
     },
     {
       "id": 6,
@@ -180,7 +185,8 @@
         "Built on a once-abandoned elevated rail line",
         "10th Avenue Square and Overlook",
         "Inspired by the 2.9 mile long Coulée verte (tree-lined walkway), a similar project in Paris completed in 1993"
-      ]
+      ],
+      "visited": false
     },
     {
       "id": 7,
@@ -207,7 +213,8 @@
         "Second oldest carousel in Queens",
         "Forest Park Greenhouse",
         "Designed by Frederick Law Olmsted, the same person who is responsible for Central Park and Prospect Park"
-      ]
+      ],
+      "visited": false
     },
     {
       "id": 8,
@@ -232,7 +239,8 @@
         "New York City's oldest and largest swimming pool",
         "Views from underneath the Robert F. Kennedy and Hell Gate Bridges",
         "14 tennis courts"
-      ]
+      ],
+      "visited": false
     },
     {
       "id": 9,
@@ -258,7 +266,8 @@
         "The largest park in Queens (and fourth largest park in all of New York City)",
         "USTA Billie Jean King National Tennis Center (home of the US Open)",
         "Citi Field, home to the Mets"
-      ]
+      ],
+      "visited": false
     },
     {
       "id": 10,
@@ -280,7 +289,8 @@
         "Kissena Lake, flanked by weeping willows and shady trees",
         "The Kissena Park Velodrome for speed bicycling",
         "Was originally part of a tree nursery operated by Samuel Parsons in the late 19th century"
-      ]
+      ],
+      "visited": false
     },
     {
       "id": 11,
@@ -304,7 +314,8 @@
         "Previously an abandoned post-industrial area in Long Island City",
         "A 30-foot-tall cantilevered platform for viewing the skyline and waterfront",
         "13,000 square foot pavilion"
-      ]
+      ],
+      "visited": false
     },
     {
       "id": 12,
@@ -330,7 +341,8 @@
         "Third-largest park in New York City",
         "Nation's first public golf course (opened in 1895)",
         "Van Cortlandt Lake, the Bronx's largest freshwater lake"
-      ]
+      ],
+      "visited": false
     },
     {
       "id": 13,
@@ -354,7 +366,8 @@
         "Largest park in New York City, more than 3 times the size of Manhattan's Central Park",
         "Orchard Beach",
         "The Bartow-Pell Mansion"
-      ]
+      ],
+      "visited": false
     },
     {
       "id": 14,
@@ -375,7 +388,8 @@
         "Views of the East River and Long Island Sound, the Manhattan skyline, and of the Whitestone and Throgs Neck Bridges",
         "9/11 Living Memorial Forest and Hilltop Grove",
         "Named after the Ferris family, who were 18th-century residents of Throggs Neck"
-      ]
+      ],
+      "visited": false
     },
     {
       "id": 15,
@@ -401,7 +415,8 @@
         "Nearly 30 different species of trees",
         "Contains the Bronx's largest swimming pool",
         "Name comes from Croton, the Greek colony famous for its Olympic athletes"
-      ]
+      ],
+      "visited": false
     },
     {
       "id": 16,
@@ -428,7 +443,8 @@
         "Bronx Zoo",
         "New York Botanical Garden",
         "Surrounds a 2 mile stretch of the Bronx River"
-      ]
+      ],
+      "visited": false
     },
     {
       "id": 17,
@@ -463,7 +479,8 @@
         "Prospect Park Bandshell hosts concerts",
         "Prospect Park Zoo",
         "Endale Arch, one of the first architectural elements constructed in Prospect Park"
-      ]
+      ],
+      "visited": false
     },
     {
       "id": 18,
@@ -488,7 +505,8 @@
         "Views of the Statue of Liberty, Brooklyn neighborhoods, Staten Island and New Jersey from the park's highest point",
         "Neoclassical/Art Deco style pool that has been open since 1936",
         "September 11 Living Memorial Grove"
-      ]
+      ],
+      "visited": false
     },
     {
       "id": 19,
@@ -511,7 +529,8 @@
         "Largest community park in Bushwick",
         "Renamed for a community leader who gave her life in the fight to rid her block of drug dealers",
         "Renovated basketball court"
-      ]
+      ],
+      "visited": false
     },
     {
       "id": 20,
@@ -536,7 +555,8 @@
         "Riegelmann Boardwalk",
         "New York Aquarium",
         "Maimonedes Park baseball stadium, home of the minor league Mets (the Brooklyn Cyclones)"
-      ]
+      ],
+      "visited": false
     },
     {
       "id": 21,
@@ -563,7 +583,8 @@
         "Views of Manhattan from under the Brooklyn Bridge",
         "6 piers",
         "Historic Fulton Ferry Landing"
-      ]
+      ],
+      "visited": false
     },
     {
       "id": 22,
@@ -586,7 +607,8 @@
       "features": [
         "Alice Austen House Museum",
         "Buono Beach"
-      ]
+      ],
+      "visited": false
     },
     {
       "id": 23,
@@ -607,7 +629,8 @@
         "Created as Staten Island's response to Manhattan's Central Park and Brooklyn's Prospect Park",
         "Silver Lake Reservoir, the endpoint of the Catskill Water Supply that brings 40% of New York City's water down from the Catskill Mountains",
         "Recreational facilities such as tennis courts and baseball fields"
-      ]
+      ],
+      "visited": false
     },
     {
       "id": 24,
@@ -632,7 +655,8 @@
         "2.5-mile boardwalk and beach area",
         "One of New York City's four spacious beachfront areas",
         "Contains numerous recreational facilities, including a skate park"
-      ]
+      ],
+      "visited": false
     },
     {
       "id": 25,
@@ -656,7 +680,8 @@
         "New Dorp Beach was once the home of the second permanent European settlement in Staten Island",
         "Beaches and wetlands help fight against erosion and flooding in nearby neighborhoods",
         "Great Kills Park became part of the National Park Service in 1972"
-      ]
+      ],
+      "visited": false
     },
     {
       "id": 26,
@@ -677,7 +702,8 @@
       "features": [
         "Conference House, a grand stone manor house built in 1680, named for the unsuccessful Revolutionary War peace conference between the Americans and the English",
         "Located at the southernmost point of New York State"
-      ]
+      ],
+      "visited": false
     }
   ]
 }
