@@ -1,12 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-function ParkCard({ park }) {
-  console.log(park.visited)
+function ParkCard({ park, onMyParks }) {
+  const [parkVisited, setParkVisited] = useState(park.visited)
+  
+  //console.log(parkVisited)
 
   function handleClick() {
-    park.visited = !park.visited;
-    console.log(park.visited)
+    setParkVisited(!parkVisited)
+    onMyParks(park, park.id)
 
+    // fetch(`http://localhost:3000/parks/${park.id}`, {
+    //   method: "PATCH",
+    //   headers: {
+    //     "Content-Type": "application/json"
+    //   },
+    //   body: JSON.stringify({
+    //     visited: parkVisited 
+    //   })
+    // })
+    // .then(resp => resp.json())
+    // .then(data => console.log(data))
   }
 
   return (
@@ -14,7 +27,7 @@ function ParkCard({ park }) {
         <img src={park.image} alt={park.name} />
         <h3>{park.name}</h3>
         <p>{park.borough}</p>
-        {park.visited ? <button onClick={handleClick} className='visited'>Remove from My Parks</button>
+        {parkVisited ? <button onClick={handleClick} className='visited'>Remove from My Parks</button>
         : <button onClick={handleClick} className='not-visited'>Add to My Parks</button>}
     </div>
   )

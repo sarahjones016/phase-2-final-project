@@ -9,12 +9,23 @@ import { useState, useEffect } from 'react';
 
 function App() {
   const [parksData, setParksData] = useState([])
+  const [myParks, setMyParks] = useState([])
 
   useEffect(() => {
     fetch('http://localhost:3000/parks')
     .then(resp => resp.json())
     .then(data => setParksData(data))
   }, [])
+
+  function addToMyParks(park, id) {
+    if (park.visited) {
+      setMyParks([...myParks, park])
+    } else {
+      setMyParks(myParks.filter((park) => {
+        return park.id !== id
+      }))
+    }
+  }
 
 
   return (
@@ -35,7 +46,7 @@ function App() {
       {/* Browser Routes to components will be down here */}
       <Routes>
         <Route path='/' element={<Home parks={parksData} />}></Route>
-        <Route path='/parks-portal' element={<ParkContainer parks={parksData} />}></Route>
+        <Route path='/parks-portal' element={<ParkContainer parks={parksData} onMyParks={addToMyParks} />}></Route>
         <Route path='/my-parks' element={<VisitedList />}></Route>
         <Route path='/park/:id' element={<ParkPage />} ></Route>
       </Routes>
