@@ -92,6 +92,7 @@ a {
 
 .form-btn {
   background-color: aquamarine;
+  border: solid black;
   font-size: 1em;
   padding: 2%;
   margin-right: 0.5vw;

@@ -28,7 +28,9 @@ function ParkCard({ park, onMyParks }) {
   return (
     <div className='park-card'>
         <div onClick={handleCardClick}>
-          <img src={park.image} alt={park.name} />
+          <div className='card-img-container'>
+            <img src={park.image} alt={park.name} />
+          </div>
           <h3>{park.name}</h3>
           <p>{park.borough}</p>
         </div>
