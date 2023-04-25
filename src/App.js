@@ -24,7 +24,14 @@ function App() {
   }, [])
 
   function handleMyParks(park) {
-      if (park.visited) {
+    setParksData(parksData.map((item) => {
+      if (item.id === park.id) {
+        return park;
+      } else {
+        return item;
+      }
+    }))  
+    if (park.visited) {
         setMyParks([...myParks, park])
       } else {
         setMyParks(myParks.filter((item) => {
@@ -53,7 +60,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home parks={parksData} />}></Route>
         <Route path='/parks-portal' element={<ParkContainer parks={parksData} onMyParks={handleMyParks} />}></Route>
-        <Route path='/my-parks' element={<VisitedList myParks={myParks} />}></Route>
+        <Route path='/my-parks' element={<VisitedList myParks={myParks} onMyParks={handleMyParks} />}></Route>
         <Route path='/park/:id' element={<ParkPage />} ></Route>
       </Routes>
     </div>

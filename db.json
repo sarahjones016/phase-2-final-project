@@ -69,7 +69,7 @@
         "Charging Bull sculpture",
         "Surrounded by its original 18th-century fence"
       ],
-      "visited": false
+      "visited": true
     },
     {
       "id": 3,
@@ -130,7 +130,7 @@
         "Movies on the lawn during the summer",
         "Le Carousel"
       ],
-      "visited": true
+      "visited": false
     },
     {
       "id": 5,
