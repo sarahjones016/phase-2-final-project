@@ -2,8 +2,6 @@ import React, { useState } from 'react'
 
 function ParkCard({ park, onMyParks }) {
   const [parkVisited, setParkVisited] = useState(park.visited)
-  
-  //console.log(parkVisited)
 
   function handleClick() {
     setParkVisited(!parkVisited)
@@ -18,10 +16,7 @@ function ParkCard({ park, onMyParks }) {
       })
     })
     .then(resp => resp.json())
-    .then(data => {
-      console.log(data)
-      onMyParks(data);
-    })
+    .then(data => onMyParks(data))
   }
 
   return (

@@ -2,8 +2,7 @@ import React from 'react'
 import ParkCard from './ParkCard'
 
 function VisitedList({ myParks, onMyParks }) {
-  console.log(myParks, "from visited")
-
+  
   const renderMyParks = myParks.map((park) => {
     return <ParkCard key={park.name} park={park} onMyParks={onMyParks} />
   })
