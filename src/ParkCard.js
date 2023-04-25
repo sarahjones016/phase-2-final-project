@@ -12,7 +12,7 @@ function ParkCard({ park, onMyParks }) {
   function handleClick() {
     setParkVisited(!parkVisited)
 
-    fetch(`http://localhost:3000/parks/${park.id}`, {
+    fetch(`http://localhost:4001/parks/${park.id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json"
@@ -27,10 +27,8 @@ function ParkCard({ park, onMyParks }) {
 
   return (
     <div className='park-card'>
-        <div onClick={handleCardClick}>
-          <div className='card-img-container'>
-            <img src={park.image} alt={park.name} />
-          </div>
+        <div onClick={handleCardClick} className='park-card-detail'>
+          <img src={park.image} alt={park.name} />
           <h3>{park.name}</h3>
           <p>{park.borough}</p>
         </div>

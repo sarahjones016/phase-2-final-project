@@ -10,7 +10,7 @@ function Form() {
     function handleParkSubmit(e) {
         e.preventDefault();
     
-        fetch("http://localhost:3000/parks", {
+        fetch("http://localhost:4001/parks", {
           method: "POST",
           headers: {
             "Content-Type": "Application/json"

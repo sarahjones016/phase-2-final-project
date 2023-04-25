@@ -12,7 +12,7 @@ function App() {
   const [myParks, setMyParks] = useState([])
 
   useEffect(() => {
-    fetch('http://localhost:3000/parks')
+    fetch('http://localhost:4001/parks')
     .then(resp => resp.json())
     .then((data) => {
       setParksData(data)
