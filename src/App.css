@@ -45,3 +45,22 @@
   align-items: center;
   text-align: left;
 }
+
+.not-visited {
+  background-color: aquamarine;
+  font-size: 0.75em;
+  padding: 1%;
+  margin-right: 0.5vw;  
+}
+
+.not-visited:hover {
+  background-color: aqua;
+}
+
+.visited {
+  background-color: azure;
+}
+
+.visted:hover {
+  background-color: aqua;
+}
