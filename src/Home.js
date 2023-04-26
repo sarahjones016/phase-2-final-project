@@ -6,8 +6,9 @@ function Home({ parks }) {
   return (
     <div className='homepage'>
         <div className='welcome'>
-          <h1>Welcome to NYC Parks!</h1><br></br>
-          <p>Your official guide to the true gems of NYC.  Explore the beautiful and historic parks of the City.  Share your favorite spots and connect!  Click below to start exploring!</p><br></br>
+          <h1>Welcome to</h1>
+          <h1>parkS<span style={{ color: "#FD95C9", border: "3.5px solid black", borderRadius: "10px" }}>NYC</span>!!!</h1><br></br>
+          <p>Your official guide to the greenspaces of New York City.  Explore the beautiful and historic parks located in all five boroughs.  Add parks to your <span style={{ textDecoration: "underline" }}>My Parks</span> list.  Share your favorite spots and connect with other City Park-goers!  Start exploring below!</p><br></br>
           
           <Link to='parks-portal'>
             <button className='home-btn'>Explore the Parks</button>

@@ -89,7 +89,7 @@ function App() {
         <Route path='/' element={<Home parks={parksData} />}></Route>
         <Route path='/parks-portal' element={<ParkContainer search={search} onSearch={handleSearch} toggle={toggle} onToggle={handleToggle} addPark={addPark} parks={toggledParks} onMyParks={handleMyParks} />}></Route>
         <Route path='/my-parks' element={<VisitedList myParks={myParks} onMyParks={handleMyParks} />}></Route>
-        <Route path='/parks/:id' element={<ParkDetails />} ></Route>
+        <Route path='/parks/:id' element={<ParkDetails onMyParks={handleMyParks}/>} ></Route>
       </Routes>
     </div>
   );
