@@ -1,29 +1,22 @@
 import React, {useState} from 'react'
 import ParkCard from './ParkCard'
-import Search from './Search'
-// import { Link } from 'react-router-dom'
-import Form from './Form'
+import Sidebar from './Sidebar'
 
-function ParkContainer({ parks, onMyParks, addPark }) {
+function ParkContainer({ parks, onMyParks, addPark, search, onSearch, toggle, onToggle}) {
 
-  const [showForm, setShowForm] = useState(false)
+  const [showSidebar, setShowSidebar] = useState(false)
 
-  function handleFormClick() {
-    setShowForm(!showForm)
+  function handleSliderClick() {
+    setShowSidebar(!showSidebar)
   }
 
   return (
     <div>
         <div className="parks-container-screens">
-          
-         <div className="left-screen">
-          <div className="form-header">
-            <h3>Add New Park</h3>
-            <button id="drop-down" className="form-btn" onClick={handleFormClick}>{showForm ? "Hide Form" : "Show Form"}</button>
-          </div>
-            {showForm ? <Form addPark={addPark} /> : null}
-         </div>
 
+        {showSidebar ? <Sidebar addPark={addPark} search={search} onSearch={onSearch} toggle={toggle} onToggle={onToggle}/> : null}
+         <button onClick={handleSliderClick} className="expand-btn">{showSidebar ? "←" : "→"}</button>
+        
          <div className="right-screen">
           <h3>Parks Portal</h3>
           <div className='park-portal'>

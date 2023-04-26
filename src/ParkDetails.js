@@ -11,19 +11,19 @@ export default function Details() {
     console.log(state)
 
     const featuresArray = state.features.map((feature) => {
-        return <li>{feature}</li>
+        return <li key={feature}>{feature}</li>
     })
 
     const subwayArray = state.transit.subway.map((subwayOption) => {
-        return <li>{subwayOption}</li>
+        return <li key={subwayOption}>{subwayOption}</li>
     })
 
     const busArray = state.transit.bus.map((busOption) => {
-        return <li>{busOption}</li>
+        return <li key={busOption}>{busOption}</li>
     })
 
     const ferryArray = state.transit.ferry.map((ferryOption) => {
-        return <li>{ferryOption}</li>
+        return <li key={ferryOption}>{ferryOption}</li>
     })
 
     return (
