@@ -34,7 +34,7 @@ export default function Details() {
                         <div className="park-basics">
                             <h1>{state.name}</h1>
                             <h3>{state.borough}</h3>
-                            <a href={state.map}>Google Maps</a>
+                            <a href={state.map}>Find On Google Maps</a>
                         </div>
                         
                         <div className="transit">
