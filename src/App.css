@@ -2,6 +2,12 @@
   text-align: center;
 }
 
+.logo {
+  height: 100px;
+  width: 100px;
+  margin-right: 1rem;
+}
+
 .homepage {
   display: flex;
   flex-direction: row;

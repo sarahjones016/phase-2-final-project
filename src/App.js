@@ -3,6 +3,7 @@ import Home from './Home';
 import ParkContainer from './ParkContainer';
 import VisitedList from './VisitedList';
 import Error from './Error';
+import logo from './logos-icons/logo.png';
 import { Route, Routes, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import ParkDetails from './ParkDetails';
@@ -67,9 +68,12 @@ function App() {
 
   return (
     <div className="App">
-      {/* <h1>NYC Parks Portal</h1> */}
+      
       <header className="header">
-        <h2>NYC Parks</h2>
+        <div className="logo-container">
+          <img src={logo} className='logo' />
+          <h1>parkS<span style={{ color: "#FD95C9", border: "3.5px solid black", borderRadius: "10px" }}>NYC</span></h1>
+        </div>
         <nav>
           <ul className="nav-bar">
             {/* Links will go here */}
