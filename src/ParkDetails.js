@@ -1,14 +1,34 @@
-import React from 'react'
-import { Link, useLocation,  useParams } from "react-router-dom"
+import React, {useState} from 'react'
+import { useLocation,  useParams } from "react-router-dom"
 
-export default function Details() {
+
+export default function ParkDetails({ onMyParks}) {
     const params = useParams()
-    console.log(params)
+    // console.log(params)
   
   
     const location = useLocation()
     const state = location.state
-    console.log(state)
+    console.log(state.visited)
+
+    const [parkFav, setParkFav] = useState(state.visited)
+
+    function handleClick() {
+        setParkFav(!parkFav)
+        console.log(parkFav)
+    
+        fetch(`http://localhost:4001/parks/${state.id}`, {
+          method: "PATCH",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({
+            visited: !parkFav
+          })
+        })
+        .then(resp => resp.json())
+        .then(data => onMyParks(data))
+      }
 
     const featuresArray = state.features.map((feature) => {
         return <li key={feature}>{feature}</li>
@@ -31,10 +51,15 @@ export default function Details() {
             <div className="parkDetails">
                 <div className="left-panel">
                     <div className="park-content">
+                        
                         <div className="park-basics">
                             <h1>{state.name}</h1>
                             <h3>{state.borough}</h3>
                             <a href={state.map}>Find On Google Maps</a>
+                            <div>
+                            {parkFav ? <button onClick={handleClick} className='visited'>Remove from My Parks</button>
+                            : <button onClick={handleClick} className='not-visited'>Add to My Parks</button>}
+                            </div>
                         </div>
                         
                         <div className="transit">
@@ -66,3 +91,4 @@ export default function Details() {
         </div>
       )
 }
+
