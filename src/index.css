@@ -118,6 +118,12 @@ a {
   gap: 2rem;
 }
 
+.transit-form-render {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 .subway-options {
   text-align: left;
   display: inline-block;
