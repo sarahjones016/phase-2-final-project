@@ -9,10 +9,12 @@ function Form({addPark}) {
     const [subway, setSubway] = useState("")
     const [ferry, setFerry] = useState("")
     const [bus, setBus] = useState("");
+    const [feature1, setFeature1] = useState("")
+    const [feature2, setFeature2] = useState("")
+    const [feature3, setFeature3] = useState("")
 
     const [subwayArray, setSubwayArray] = useState([]);
     const [ferryArray, setFerryArray] = useState([]);
-    const [busArray, setBusArray] = useState([]);
 
     function handleSubwayChange(e) {
       let selected = e.target.value;
@@ -28,7 +30,10 @@ function Form({addPark}) {
     
     function handleParkSubmit(e) {
         e.preventDefault();
-    
+
+        let busArray = bus.split(" ");
+        let featureArray = [feature1, feature2, feature3]
+        
         fetch("http://localhost:4001/parks", {
           method: "POST",
           headers: {
@@ -41,10 +46,10 @@ function Form({addPark}) {
             map,
             transit: {
               subway: subwayArray,
-              bus: [],
+              bus: busArray,
               ferry: ferryArray
             },
-            features: [],
+            features: featureArray,
             visited: false,
           })
         })
@@ -121,10 +126,7 @@ function Form({addPark}) {
               <div></div>
 
               <label>NYC Bus</label>
-              <input value={bus} type="text" onChange={(e) => {
-                setBus(e.target.value)
-                console.log(e.target.value)
-                }}></input>
+              <input value={bus} type="text" onChange={(e) => setBus(e.target.value)}></input>
 
               <label>NYC Ferry</label>
               <select onChange={handleFerryChange} value={ferry}>
@@ -139,6 +141,11 @@ function Form({addPark}) {
               </select>
               <div>{ferryArray}</div>
               <div></div>
+
+              <label>Park Features</label>
+              <input type="text" value={feature1} onChange={(e) => setFeature1(e.target.value)}></input>
+              <input type="text" value={feature2} onChange={(e) => setFeature2(e.target.value)}></input>
+              <input type="text" value={feature3} onChange={(e) => setFeature3(e.target.value)}></input>
             </div>
 
             <div className="form-button-div">

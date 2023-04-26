@@ -706,17 +706,29 @@
       "visited": false
     },
     {
-      "name": "Test Park",
-      "image": "https://images.unsplash.com/photo-1519331379826-f10be5486c6f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGFya3xlbnwwfHwwfHw%3D&w=1000&q=80",
-      "borough": "Bronx",
-      "map": "https://www.google.com/maps/@40.7106639,-74.0182495,15z",
+      "name": "New Park",
+      "image": "https://cdn.britannica.com/71/189171-050-B4A7DA05/Central-Park-New-York-City.jpg",
+      "borough": "Queens",
+      "map": "",
       "transit": {
-        "subway": [],
-        "bus": [],
-        "ferry": []
+        "subway": [
+          "E",
+          "F",
+          "7"
+        ],
+        "bus": [
+          "Q101"
+        ],
+        "ferry": [
+          "AST"
+        ]
       },
-      "features": [],
-      "visited": false,
+      "features": [
+        "George and Martha Washington made out here",
+        "Thomas jefferson punched hamilton here",
+        "a scene from godfather was filmed here"
+      ],
+      "visited": true,
       "id": 27
     }
   ]
