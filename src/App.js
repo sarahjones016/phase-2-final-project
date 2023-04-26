@@ -10,6 +10,8 @@ import ParkDetails from './ParkDetails';
 function App() {
   const [parksData, setParksData] = useState([])
   const [myParks, setMyParks] = useState([])
+  const [search, setSearch] = useState("")
+  const [toggle, setToggle] = useState("Select Borough")
 
   useEffect(() => {
     fetch('http://localhost:4001/parks')
@@ -22,6 +24,25 @@ function App() {
       setMyParks(visitedParks)
     })
   }, [])
+
+  function handleSearch(newSearch) {
+    setSearch(newSearch)
+  }
+
+  const searchedParks = parksData.filter((park) => {
+    return park.name.toLowerCase().includes(search.toLowerCase())
+  })
+
+  function handleToggle(newToggle) {
+    setToggle(newToggle)
+  }
+
+  const toggledParks = searchedParks.filter((park) => {
+    if (toggle === "Select Borough") {
+      return true;
+    }
+    return park.borough === toggle
+  })
 
   function handleMyParks(park) {
     setParksData(parksData.map((item) => {
@@ -62,7 +83,7 @@ function App() {
       {/* Browser Routes to components will be down here */}
       <Routes>
         <Route path='/' element={<Home parks={parksData} />}></Route>
-        <Route path='/parks-portal' element={<ParkContainer addPark={addPark} parks={parksData} onMyParks={handleMyParks} />}></Route>
+        <Route path='/parks-portal' element={<ParkContainer search={search} onSearch={handleSearch} toggle={toggle} onToggle={handleToggle} addPark={addPark} parks={toggledParks} onMyParks={handleMyParks} />}></Route>
         <Route path='/my-parks' element={<VisitedList myParks={myParks} onMyParks={handleMyParks} />}></Route>
         <Route path='/parks/:id' element={<ParkDetails />} ></Route>
       </Routes>
