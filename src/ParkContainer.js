@@ -18,7 +18,7 @@ function ParkContainer({ parks, onMyParks, addPark, search, onSearch, toggle, on
          <button onClick={handleSliderClick} className="expand-btn">{showSidebar ? "←" : "→"}</button>
         
          <div className="right-screen">
-          <h3>Parks Portal</h3>
+          <h1>Parks Portal</h1>
           <div className='park-portal'>
             {parks.map((park) => {
               return <ParkCard park={park} key={park.name} onMyParks={onMyParks} />
