@@ -40,7 +40,6 @@
 
 .home-btn:hover {
   background-color: rgba(253, 149, 201, 0.503);
-;
 }
 
 .park-card {
@@ -74,6 +73,18 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   text-align: left;
+}
+
+.my-parks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: left;
+}
+
+.my-parks-container {
+  padding: 2rem;
 }
 
 .not-visited {

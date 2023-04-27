@@ -8,10 +8,9 @@ function VisitedList({ myParks, onMyParks }) {
   })
 
   return (
-    <div className="my-parks">
-        {/* This page will be a profile style page which will hold a list of parks that the user has visited */}
+    <div className="my-parks-container">
         <h1>My Parks</h1>
-        <div>
+        <div className="my-parks">
           {renderMyParks}
         </div>
     </div>
