@@ -106,3 +106,14 @@
 .visted:hover {
   background-color: grey;
 }
+
+@media all and (max-width: 480px) {
+  .homepage {
+    display: inline-block;
+    padding: 0px;
+  }
+
+  .welcome {
+    width: 100%;
+  }
+}

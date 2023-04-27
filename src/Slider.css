@@ -66,3 +66,20 @@
     85% {opacity: 1;}
     100% {opacity: 0;}
 }
+
+@media all and (max-width: 480px) {
+    .slider-container {
+        position: relative;
+        width: 100%;
+        border: 4px solid hsl(0, 0%, 90%);
+        border-color: #24B28B;
+        overflow: hidden
+    }
+  
+    .current-slide {
+        position: relative;
+        width: 100%;
+        animation-name: fade;
+        animation-duration: 5s;
+    }
+  }

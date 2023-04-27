@@ -12,10 +12,12 @@ function ParkContainer({ parks, onMyParks, addPark, search, onSearch, toggle, on
 
   return (
     <div>
+        <button onClick={handleSliderClick} className="expand-btn-mobile">{showSidebar ? "↑" : "↓"}</button>
         <div className="parks-container-screens">
-
         {showSidebar ? <Sidebar addPark={addPark} search={search} onSearch={onSearch} toggle={toggle} onToggle={onToggle}/> : null}
-         <button onClick={handleSliderClick} className="expand-btn">{showSidebar ? "←" : "→"}</button>
+         <button onClick={handleSliderClick} className="expand-btn-desktop">{showSidebar ? "←" : "→"}</button>
+
+         {/* {showSidebar ? <Sidebar addPark={addPark} search={search} onSearch={onSearch} toggle={toggle} onToggle={onToggle}/> : null} */}
         
          <div className="right-screen">
           <h1>Parks Portal</h1>
