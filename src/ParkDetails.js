@@ -1,11 +1,10 @@
 import React, {useState} from 'react'
-import { useLocation,  useParams } from "react-router-dom"
+import { useLocation } from "react-router-dom"
 
 
 export default function ParkDetails({ onMyParks}) {
-    const params = useParams()
-    // console.log(params)
-  
+    // const params = useParams()
+    // // console.log(params)
   
     const location = useLocation()
     const state = location.state
@@ -86,7 +85,7 @@ export default function ParkDetails({ onMyParks}) {
                     </div>
                 </div>
                 <div className="right-panel">
-                    <img className="details-image"src={state.image}></img>
+                    <img className="details-image"src={state.image} alt={state.name}></img>
                 </div>
             </div>
         </div>
