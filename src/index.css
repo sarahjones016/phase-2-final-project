@@ -173,6 +173,19 @@ header {
   margin: 1rem;
 }
 
+.park-name {
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  font-size: 1.75rem;
+}
+
+.park-name h1 {
+  text-align: left;
+  padding-left: 3.5rem;
+  color: rgb(246, 118, 182);
+  text-shadow: 3px 3px #24B28B;;
+}
+
 .parkDetails {
   display: flex;
   height: 99vh;
@@ -180,32 +193,54 @@ header {
 }
 
 .left-panel {
-  height: 100%;
+  height: 65vh;
   flex: 40;
   display: inline-block;
-  padding: 2rem;
+  padding-left: 3.5rem;
+  padding-right: 2rem;
 }
 
 .right-panel {
-  height: 100%;
   flex: 60;
-  padding: 2rem;
+  padding-right: 3.5rem;
+  position: relative;
+  width: 65vw;
+  height: 65vh;
 }
 
 .right-panel img {
+  border: 4px solid hsl(0, 0%, 90%);
+  border-color: #24B28B;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.park-basics {
-  padding: 2rem;
+.park-basics h1 {
+  font-size: 3.25em;
+}
+
+.park-basics h3 {
+  font-size: 1.75em;
+}
+
+.park-basics a {
+  font-size: 1.25em;
+}
+
+.park-basics button {
+  padding: .6rem;
+  font-size: 1rem;
 }
 
 .transit {
-  padding: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 1.5rem;
 }
 
 .features {
-  padding: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .park-content {
