@@ -17,14 +17,25 @@ function HomeSlider({ parks }) {
     }, [])
 
     useEffect(() => {
-        setTimeout(() => {
+        const timeId = setTimeout(() => {
             if (currentSlide < slideData.length - 1) {
                 setCurrentSlide(currentSlide + 1)
             } else {
                 setCurrentSlide(0);
             }
-        }, 5000)
+        }, 5000);
+        return () => {
+            clearTimeout(timeId);
+        }
     })
+
+    function handlePrevClick() {
+        currentSlide === 0 ? setCurrentSlide(slideData.length - 1) : setCurrentSlide(currentSlide - 1)
+    }
+
+    function handleNextClick() {
+        currentSlide === slideData.length - 1 ? setCurrentSlide(0) : setCurrentSlide(currentSlide + 1)
+    }
 
   return (
     <div className='slider-container'>
@@ -40,8 +51,8 @@ function HomeSlider({ parks }) {
                 )
             })
         }
-        <button className='prev'>&#8678;</button>
-        <button className="next">&#8680;</button>
+        <button onClick={handlePrevClick} className='prev'>&#8678;</button>
+        <button onClick={handleNextClick} className="next">&#8680;</button>
     </div>
   )
 }
