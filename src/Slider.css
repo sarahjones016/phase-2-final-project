@@ -43,6 +43,7 @@
 .prev:hover {
     background: rgba(255, 255, 255, .4);
     font-weight: bold;
+    cursor: pointer;
 }
 
 .next {
@@ -58,6 +59,7 @@
 .next:hover {
     background: rgba(255, 255, 255, .4);
     font-weight: bold;
+    cursor: pointer;
 }
 
 @keyframes fade {
