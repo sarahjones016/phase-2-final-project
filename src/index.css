@@ -336,6 +336,41 @@ header {
     background-color: #24B28B;
   }
 
+  .parkDetails {
+    display: inline-block;
+  }
+  
+  .left-panel {
+    display: inline-block;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+  .right-panel {
+    display: inline-block;
+    padding-top: 1rem;
+    padding-right: 0rem;
+    width: 100%;
+    height: 65vh;
+  }
+
+  .park-name {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.75rem;
+  }
+  
+  .park-name h1 {
+    text-align: left;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .transit {
+    padding-top: 2.5rem;
+    padding-bottom: 1rem;
+  }
+
 }
 
 

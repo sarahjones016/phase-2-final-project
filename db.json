@@ -42,7 +42,7 @@
         "Strawberry Fields, a living memorial to John Lennon",
         "The Mall, a walkway that runs through the middle of the Park from 66th to 72nd street"
       ],
-      "visited": false
+      "visited": true
     },
     {
       "id": 2,
@@ -69,7 +69,7 @@
         "Charging Bull sculpture",
         "Surrounded by its original 18th-century fence"
       ],
-      "visited": false
+      "visited": true
     },
     {
       "id": 3,
@@ -240,7 +240,7 @@
         "Views from underneath the Robert F. Kennedy and Hell Gate Bridges",
         "14 tennis courts"
       ],
-      "visited": false
+      "visited": true
     },
     {
       "id": 9,
