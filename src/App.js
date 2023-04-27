@@ -14,6 +14,7 @@ function App() {
   const [search, setSearch] = useState("")
   const [toggle, setToggle] = useState("Select Borough")
 
+
   useEffect(() => {
     fetch('http://localhost:4001/parks')
     .then(resp => resp.json())
