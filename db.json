@@ -69,7 +69,7 @@
         "Charging Bull sculpture",
         "Surrounded by its original 18th-century fence"
       ],
-      "visited": false
+      "visited": true
     },
     {
       "id": 3,
@@ -267,7 +267,7 @@
         "USTA Billie Jean King National Tennis Center (home of the US Open)",
         "Citi Field, home to the Mets"
       ],
-      "visited": false
+      "visited": true
     },
     {
       "id": 10,
@@ -342,7 +342,7 @@
         "Nation's first public golf course (opened in 1895)",
         "Van Cortlandt Lake, the Bronx's largest freshwater lake"
       ],
-      "visited": false
+      "visited": true
     },
     {
       "id": 13,
