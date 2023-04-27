@@ -24,7 +24,7 @@ function HomeSlider({ parks }) {
                 setCurrentSlide(0);
             }
         }, 5000)
-    }, [currentSlide])
+    })
 
   return (
     <div className='slider-container'>
@@ -37,9 +37,11 @@ function HomeSlider({ parks }) {
                         <h1>{slide.name}</h1>
                     </> : null}
                 </div>
-            )
-        })
+                )
+            })
         }
+        <button className='prev'>&#8678;</button>
+        <button className="next">&#8680;</button>
     </div>
   )
 }
