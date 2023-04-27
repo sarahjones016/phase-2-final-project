@@ -41,7 +41,11 @@ function Form({addPark}) {
 
         let busArray = bus.split(" ");
         let featureArray = [feature1, feature2, feature3]
-        
+        let truthyFeatureArray = featureArray.filter((feature) => {
+          return !!feature
+        })
+        // https://www.samanthaming.com/pictorials/how-to-remove-all-falsy-values-from-an-array/
+
         fetch("http://localhost:4001/parks", {
           method: "POST",
           headers: {
@@ -57,7 +61,7 @@ function Form({addPark}) {
               bus: busArray,
               ferry: ferryArray
             },
-            features: featureArray,
+            features: truthyFeatureArray,
             visited: false,
           })
         })
