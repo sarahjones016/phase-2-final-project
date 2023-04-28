@@ -233,7 +233,7 @@
           "Q100"
         ],
         "ferry": [
-          "AS"
+          "https://static.wikia.nocookie.net/logopedia/images/8/8b/NYC_Ferry_Astoria.png"
         ]
       },
       "features": [
@@ -307,8 +307,8 @@
           "Q103"
         ],
         "ferry": [
-          "ER",
-          "AS"
+          "https://static.wikia.nocookie.net/logopedia/images/3/38/NYC_Ferry_East_River.png",
+          "https://static.wikia.nocookie.net/logopedia/images/8/8b/NYC_Ferry_Astoria.png"
         ]
       },
       "features": [
@@ -382,7 +382,7 @@
           "Bx42"
         ],
         "ferry": [
-          "SV"
+          "https://static.wikia.nocookie.net/logopedia/images/7/7a/NYC_Ferry_Soundview.png"
         ]
       },
       "features": [
@@ -576,8 +576,8 @@
           "B25"
         ],
         "ferry": [
-          "ER",
-          "SB"
+          "https://static.wikia.nocookie.net/logopedia/images/3/38/NYC_Ferry_East_River.png",
+          "https://static.wikia.nocookie.net/logopedia/images/6/6d/NYC_Ferry_South_Brooklyn.png"
         ]
       },
       "features": [
