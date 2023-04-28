@@ -23,7 +23,7 @@ import pngw from "mta-subway-bullets/build/png/w.png"
 import pngz from "mta-subway-bullets/build/png/z.png"
 import pngsir from "mta-subway-bullets/build/png/sir.png"
 
-function Form({addPark}) {
+function Form({ addPark, resetForm }) {
 
     const [name, setName] = useState("")
     const [image, setImage] = useState("")
@@ -99,6 +99,8 @@ const ferryRender = ferryArray.map((icon) => {
         })
         .then((res) => res.json())
         .then((data) => addPark(data))
+
+        resetForm();
       }
 
   return (
