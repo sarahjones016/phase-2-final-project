@@ -1,4 +1,27 @@
 import React, {useState} from 'react'
+import png1 from "mta-subway-bullets/build/png/1.png"
+import png2 from "mta-subway-bullets/build/png/2.png"
+import png3 from "mta-subway-bullets/build/png/3.png"
+import png4 from "mta-subway-bullets/build/png/4.png"
+import png5 from "mta-subway-bullets/build/png/5.png"
+import png6 from "mta-subway-bullets/build/png/6.png"
+import png7 from "mta-subway-bullets/build/png/7.png"
+import pnga from "mta-subway-bullets/build/png/a.png"
+import pngb from "mta-subway-bullets/build/png/b.png"
+import pngc from "mta-subway-bullets/build/png/c.png"
+import pngd from "mta-subway-bullets/build/png/d.png"
+import pnge from "mta-subway-bullets/build/png/e.png"
+import pngf from "mta-subway-bullets/build/png/f.png"
+import pngg from "mta-subway-bullets/build/png/g.png"
+import pngj from "mta-subway-bullets/build/png/j.png"
+import pngl from "mta-subway-bullets/build/png/l.png"
+import pngm from "mta-subway-bullets/build/png/m.png"
+import pngn from "mta-subway-bullets/build/png/n.png"
+import pngq from "mta-subway-bullets/build/png/q.png"
+import pngr from "mta-subway-bullets/build/png/r.png"
+import pngw from "mta-subway-bullets/build/png/w.png"
+import pngz from "mta-subway-bullets/build/png/z.png"
+import pngsir from "mta-subway-bullets/build/png/sir.png"
 
 function Form({addPark}) {
 
@@ -16,8 +39,12 @@ function Form({addPark}) {
     const [subwayArray, setSubwayArray] = useState([]);
     const [ferryArray, setFerryArray] = useState([]);
 
-    const subwayRender = subwayArray.map((line) => {
-      return <p key={line}>{line}</p>
+  //   const subwayRender = subwayArray.map((line) => {
+  //     return <p key={line}>{line}</p>
+  // })
+  
+  const subwayRender = subwayArray.map((icon) => {
+    return <img src={icon} key={icon} className="subway-icon" />
   })
 
   const ferryRender = ferryArray.map((line) => {
@@ -26,9 +53,11 @@ function Form({addPark}) {
 
     function handleSubwayChange(e) {
       let selected = e.target.value;
+      
       selected === "Select Subway" ? setSubway("") : setSubway(e.target.value)
       selected === "Select Subway" ? setSubwayArray(subwayArray) : setSubwayArray([...subwayArray, selected])
     }
+
 
     function handleFerryChange(e) {
       let selected = e.target.value;
@@ -125,28 +154,29 @@ function Form({addPark}) {
 
             <select onChange={handleSubwayChange} value={subway}>
               <option>Select Subway</option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-              <option>6</option>
-              <option>7</option>
-              <option>A</option>
-              <option>B</option>
-              <option>C</option>
-              <option>D</option>
-              <option>E</option>
-              <option>F</option>
-              <option>G</option>
-              <option>J</option>
-              <option>L</option>
-              <option>M</option>
-              <option>N</option>
-              <option>Q</option>
-              <option>R</option>
-              <option>W</option>
-              <option>SIR</option>
+              <option value={png1}>1</option>
+              <option value={png2}>2</option>
+              <option value={png3}>3</option>
+              <option value={png4}>4</option>
+              <option value={png5}>5</option>
+              <option value={png6}>6</option>
+              <option value={png7}>7</option>
+              <option value={pnga}>A</option>
+              <option value={pngb}>B</option>
+              <option value={pngc}>C</option>
+              <option value={pngd}>D</option>
+              <option value={pnge}>E</option>
+              <option value={pngf}>F</option>
+              <option value={pngg}>G</option>
+              <option value={pngj}>J</option>
+              <option value={pngl}>L</option>
+              <option value={pngm}>M</option>
+              <option value={pngn}>N</option>
+              <option value={pngq}>Q</option>
+              <option value={pngr}>R</option>
+              <option value={pngw}>W</option>
+              <option value={pngz}>Z</option>
+              <option value={pngsir}>SIR</option>
             </select>
             <div className="transit-form-render">{subwayRender}</div>
 

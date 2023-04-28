@@ -8,7 +8,7 @@ export default function ParkDetails({ onMyParks}) {
   
     const location = useLocation()
     const state = location.state
-    console.log(state.visited)
+    console.log(state.transit.subway)
 
     const [parkFav, setParkFav] = useState(state.visited)
 
@@ -33,8 +33,12 @@ export default function ParkDetails({ onMyParks}) {
         return <li key={feature}>{feature}</li>
     })
 
-    const subwayArray = state.transit.subway.map((subwayOption) => {
-        return <li key={subwayOption}>{subwayOption}</li>
+    // const subwayArray = state.transit.subway.map((subwayOption) => {
+    //     return <li key={subwayOption}>{subwayOption}</li>
+    // })
+
+    const subwayArray = state.transit.subway.map((icon) => {
+        return <img src={icon} alt={icon} key={icon} className='subway-icon' />
     })
 
     const busArray = state.transit.bus.map((busOption) => {
@@ -66,7 +70,7 @@ export default function ParkDetails({ onMyParks}) {
                             <h3>Transportation:</h3>
                             <div className="transit-options">
                                 <h4>Subway: </h4>
-                                    <ul className="subway">{subwayArray}</ul>
+                                    <div className="subway">{subwayArray}</div>
                                 <h4>Bus: </h4>
                                     <ul className="bus">{busArray}</ul>
                                 <h4>Ferry: </h4>
@@ -81,7 +85,7 @@ export default function ParkDetails({ onMyParks}) {
                                     {featuresArray}
                                 </ul>
                         </div>
-                        
+
                     </div>
                 </div>
                 <div className="right-panel">

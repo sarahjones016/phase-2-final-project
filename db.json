@@ -8,17 +8,17 @@
       "map": "https://goo.gl/maps/peyBcJTuxSv286Ei9",
       "transit": {
         "subway": [
-          "1",
-          "2",
-          "3",
-          "A",
-          "B",
-          "C",
-          "D",
-          "N",
-          "Q",
-          "R",
-          "W"
+          "/subway-images/1.png",
+          "/subway-images/2.png",
+          "/subway-images/3.png",
+          "/subway-images/a.png",
+          "/subway-images/b.png",
+          "/subway-images/c.png",
+          "/subway-images/d.png",
+          "/subway-images/n.png",
+          "/subway-images/q.png",
+          "/subway-images/r.png",
+          "/subway-images/w.png"
         ],
         "bus": [
           "M1",
@@ -52,11 +52,11 @@
       "map": "https://goo.gl/maps/nxu4xKXqfaRZFbTX7",
       "transit": {
         "subway": [
-          "1",
-          "4",
-          "5",
-          "R",
-          "W"
+          "/subway-images/1.png",
+          "/subway-images/4.png",
+          "/subway-images/5.png",
+          "/subway-images/r.png",
+          "/subway-images/w.png"
         ],
         "bus": [
           "M20",
@@ -79,9 +79,9 @@
       "map": "https://goo.gl/maps/NnxpVjnvCqYgbBjy6",
       "transit": {
         "subway": [
-          "6",
-          "R",
-          "W"
+          "/subway-images/6.png",
+          "/subway-images/r.png",
+          "/subway-images/w.png"
         ],
         "bus": [
           "M1",
@@ -107,11 +107,11 @@
       "map": "https://goo.gl/maps/kJz9uoDcgrLfUsfa6",
       "transit": {
         "subway": [
-          "7",
-          "B",
-          "D",
-          "F",
-          "M"
+          "/subway-images/7.png",
+          "/subway-images/b.png",
+          "/subway-images/d.png",
+          "/subway-images/f.png",
+          "/subway-images/m.png"
         ],
         "bus": [
           "M1",
@@ -140,9 +140,9 @@
       "map": "https://goo.gl/maps/XE9hWpVXFs8W8Ss5A",
       "transit": {
         "subway": [
-          "1",
-          "2",
-          "3"
+          "/subway-images/1.png",
+          "/subway-images/2.png",
+          "/subway-images/3.png"
         ],
         "bus": [
           "M5",
@@ -168,10 +168,11 @@
       "map": "https://goo.gl/maps/oSxpuXnF8mFhKQ787",
       "transit": {
         "subway": [
-          "A",
-          "C",
-          "E",
-          "L"
+          "/subway-images/7.png",
+          "/subway-images/a.png",
+          "/subway-images/c.png",
+          "/subway-images/e.png",
+          "/subway-images/l.png"
         ],
         "bus": [
           "M11",
@@ -196,8 +197,8 @@
       "map": "https://goo.gl/maps/yQEfTgH4CJnDtS8w5",
       "transit": {
         "subway": [
-          "J",
-          "Z"
+          "/subway-images/j.png",
+          "/subway-images/z.png"
         ],
         "bus": [
           "Q37",
@@ -224,8 +225,8 @@
       "map": "https://goo.gl/maps/2RVPJenjnArB5sF39",
       "transit": {
         "subway": [
-          "N",
-          "W"
+          "/subway-images/n.png",
+          "/subway-images/w.png"
         ],
         "bus": [
           "Q69",
@@ -250,9 +251,9 @@
       "map": "https://goo.gl/maps/ueMNXcytHDF56da26",
       "transit": {
         "subway": [
-          "7",
-          "E",
-          "F"
+          "/subway-images/7.png",
+          "/subway-images/e.png",
+          "/subway-images/f.png"
         ],
         "bus": [
           "Q48",
@@ -300,7 +301,7 @@
       "map": "https://goo.gl/maps/VS2PmJ4cAiJmmsdA9",
       "transit": {
         "subway": [
-          "7"
+          "/subway-images/7.png"
         ],
         "bus": [
           "Q103"
@@ -325,8 +326,8 @@
       "map": "https://goo.gl/maps/js5ziPWr8BPjJBW48",
       "transit": {
         "subway": [
-          "1",
-          "4"
+          "/subway-images/1.png",
+          "/subway-images/4.png"
         ],
         "bus": [
           "Bx3",
@@ -352,7 +353,7 @@
       "map": "https://goo.gl/maps/61xpFSx7JwLTwyCw8",
       "transit": {
         "subway": [
-          "6"
+          "/subway-images/6.png"
         ],
         "bus": [
           "Bx5",
@@ -399,8 +400,8 @@
       "map": "https://goo.gl/maps/ZqkRrvuRnN6teRCg6",
       "transit": {
         "subway": [
-          "2",
-          "5"
+          "/subway-images/2.png",
+          "/subway-images/5.png"
         ],
         "bus": [
           "Bx11",
@@ -426,8 +427,8 @@
       "map": "https://goo.gl/maps/e5MVMh7T4LuVMGGc6",
       "transit": {
         "subway": [
-          "2",
-          "5"
+          "/subway-images/2.png",
+          "/subway-images/5.png"
         ],
         "bus": [
           "Bx12",
@@ -454,13 +455,13 @@
       "map": "https://goo.gl/maps/xuVCafso4kyHtx3X8",
       "transit": {
         "subway": [
-          "2",
-          "3",
-          "4",
-          "B",
-          "F",
-          "G",
-          "Q"
+          "/subway-images/2.png",
+          "/subway-images/3.png",
+          "/subway-images/4.png",
+          "/subway-images/b.png",
+          "/subway-images/f.png",
+          "/subway-images/g.png",
+          "/subway-images/q.png"
         ],
         "bus": [
           "B12",
@@ -490,9 +491,9 @@
       "map": "https://goo.gl/maps/3r9Lm51g5aq9DHXj8",
       "transit": {
         "subway": [
-          "D",
-          "N",
-          "R"
+          "/subway-images/d.png",
+          "/subway-images/n.png",
+          "/subway-images/r.png"
         ],
         "bus": [
           "B35",
@@ -516,7 +517,7 @@
       "map": "https://goo.gl/maps/dfvhqg3usfbN5ez96",
       "transit": {
         "subway": [
-          "L"
+          "/subway-images/l.png"
         ],
         "bus": [
           "B38",
@@ -540,10 +541,10 @@
       "map": "https://goo.gl/maps/CwxRWQZ9pbC6R2Np6",
       "transit": {
         "subway": [
-          "D",
-          "F",
-          "N",
-          "Q"
+          "/subway-images/d.png",
+          "/subway-images/f.png",
+          "/subway-images/n.png",
+          "/subway-images/q.png"
         ],
         "bus": [
           "B36",
@@ -566,10 +567,10 @@
       "map": "https://goo.gl/maps/aRnjbUGz2gXGAxHz9",
       "transit": {
         "subway": [
-          "2",
-          "3",
-          "A",
-          "C"
+          "/subway-images/2.png",
+          "/subway-images/3.png",
+          "/subway-images/a.png",
+          "/subway-images/c.png"
         ],
         "bus": [
           "B25"
@@ -594,7 +595,7 @@
       "map": "https://goo.gl/maps/QCoArJTPmRF5jMTb6",
       "transit": {
         "subway": [
-          "SIR"
+          "/subway-images/sir.png"
         ],
         "bus": [
           "S51",
@@ -640,7 +641,7 @@
       "map": "https://goo.gl/maps/vSLqLXFTG2FVBjzWA",
       "transit": {
         "subway": [
-          "SIR"
+          "/subway-images/sir.png"
         ],
         "bus": [
           "S51",
@@ -666,7 +667,7 @@
       "map": "https://goo.gl/maps/EKuWi9EEHot7WJRo9",
       "transit": {
         "subway": [
-          "SIR"
+          "/subway-images/sir.png"
         ],
         "bus": [
           "S76",
@@ -691,7 +692,7 @@
       "map": "https://goo.gl/maps/mzufHK6A9gVZCVFWA",
       "transit": {
         "subway": [
-          "SIR"
+          "/subway-images/sir.png"
         ],
         "bus": [
           "S59",
@@ -712,9 +713,9 @@
       "map": "",
       "transit": {
         "subway": [
-          "E",
-          "F",
-          "7"
+          "/subway-images/e.png",
+          "/subway-images/f.png",
+          "/subway-images/7.png"
         ],
         "bus": [
           "Q101"
