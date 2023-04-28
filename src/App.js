@@ -72,7 +72,7 @@ function App() {
       
       <header className="header">
         <div className="logo-container">
-          <img src={logo} className='logo' />
+          <img src={logo} alt='Welcome to parkSNYC!' className='logo' />
           <h1>parkS<span style={{ color: "#FD95C9", border: "3.5px solid black", borderRadius: "10px" }}>NYC</span></h1>
         </div>
         <nav>

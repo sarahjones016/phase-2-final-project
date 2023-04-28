@@ -10,6 +10,10 @@ function handleFormClick() {
     setShowForm(!showForm)
   }
 
+  function resetForm() {
+    setShowForm(!showForm)
+  }
+
   return (
     <div className="left-screen">
           <div>
@@ -20,7 +24,7 @@ function handleFormClick() {
             <h3>Add New Park</h3>
             <button id="drop-down" className="form-btn" onClick={handleFormClick}>{showForm ? "Hide Form" : "Show Form"}</button>
           </div>
-            {showForm ? <Form addPark={addPark} /> : null}
+            {showForm ? <Form addPark={addPark} resetForm={resetForm} /> : null}
     </div>
   )
 }

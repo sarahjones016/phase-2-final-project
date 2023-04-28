@@ -271,12 +271,17 @@ header {
 }
 
 .ferry {
-  list-style: none;
-}
-
-.ferry li {
   display: inline-block;
   padding: 0px 7px;
+}
+
+.ferry-icon {
+  width: 30px;
+  height: auto;
+}
+
+.ferry-select {
+  height: 40px;
 }
 
 

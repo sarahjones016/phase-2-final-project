@@ -45,8 +45,12 @@ export default function ParkDetails({ onMyParks}) {
         return <li key={busOption}>{busOption}</li>
     })
 
-    const ferryArray = state.transit.ferry.map((ferryOption) => {
-        return <li key={ferryOption}>{ferryOption}</li>
+    // const ferryArray = state.transit.ferry.map((ferryOption) => {
+    //     return <li key={ferryOption}>{ferryOption}</li>
+    // })
+
+    const ferryArray = state.transit.ferry.map((icon) => {
+        return <img src={icon} alt={icon} key={icon} className='ferry-icon' />
     })
 
     return (
@@ -74,7 +78,7 @@ export default function ParkDetails({ onMyParks}) {
                                 <h4>Bus: </h4>
                                     <ul className="bus">{busArray}</ul>
                                 <h4>Ferry: </h4>
-                                    <ul className="ferry">{ferryArray}</ul>
+                                    <div className="ferry">{ferryArray}</div>
                             </div>
                         </div>
                         

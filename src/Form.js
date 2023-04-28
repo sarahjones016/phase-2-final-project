@@ -23,7 +23,7 @@ import pngw from "mta-subway-bullets/build/png/w.png"
 import pngz from "mta-subway-bullets/build/png/z.png"
 import pngsir from "mta-subway-bullets/build/png/sir.png"
 
-function Form({addPark}) {
+function Form({ addPark, resetForm }) {
 
     const [name, setName] = useState("")
     const [image, setImage] = useState("")
@@ -44,11 +44,15 @@ function Form({addPark}) {
   // })
   
   const subwayRender = subwayArray.map((icon) => {
-    return <img src={icon} key={icon} className="subway-icon" />
+    return <img src={icon} alt={icon} key={icon} className="subway-icon" />
   })
 
-  const ferryRender = ferryArray.map((line) => {
-    return <p key={line}>{line}</p>
+//   const ferryRender = ferryArray.map((line) => {
+//     return <p key={line}>{line}</p>
+// })
+
+const ferryRender = ferryArray.map((icon) => {
+  return <img src={icon} alt={icon} key={icon} className="ferry-icon" />
 })
 
     function handleSubwayChange(e) {
@@ -95,6 +99,8 @@ function Form({addPark}) {
         })
         .then((res) => res.json())
         .then((data) => addPark(data))
+
+        resetForm();
       }
 
   return (
@@ -182,15 +188,15 @@ function Form({addPark}) {
             <input value={bus} type="text" placeholder="Enter Bus Route(s)" onChange={(e) => setBus(e.target.value)}></input>
             <div></div>
 
-            <select onChange={handleFerryChange} value={ferry}>
+            <select className='ferry-select' onChange={handleFerryChange} value={ferry}>
               <option>Select Ferry</option>
-              <option>ER</option>
-              <option>RW</option>
-              <option>SB</option>
-              <option>AST</option>
-              <option>SV</option>
-              <option>SG</option>
-              <option>GI</option>
+              <option value="https://static.wikia.nocookie.net/logopedia/images/3/38/NYC_Ferry_East_River.png">East River</option>
+              <option value="https://static.wikia.nocookie.net/logopedia/images/0/0a/NYC_Ferry_Rockaway.png">Rockaway</option>
+              <option value="https://static.wikia.nocookie.net/logopedia/images/6/6d/NYC_Ferry_South_Brooklyn.png">South Brooklyn</option>
+              <option value="https://static.wikia.nocookie.net/logopedia/images/8/8b/NYC_Ferry_Astoria.png">Astoria</option>
+              <option value="https://static.wikia.nocookie.net/logopedia/images/7/7a/NYC_Ferry_Soundview.png">Sound View</option>
+              <option value="https://static.wikia.nocookie.net/logopedia/images/b/b1/NYC_Ferry_St_George.png">St. George</option>
+              <option value="https://w7.pngwing.com/pngs/159/531/png-transparent-queens-brooklyn-pier-11-wall-street-staten-island-ferry-ferry-miscellaneous-text-trademark-thumbnail.png">Governor's Island</option>
             </select>
             <div className='transit-form-render'>{ferryRender}</div>
               
