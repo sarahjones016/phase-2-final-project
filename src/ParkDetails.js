@@ -1,10 +1,11 @@
 import React, {useState} from 'react'
-import { useLocation,  useParams } from "react-router-dom"
+import { useLocation } from "react-router-dom"
 
 
 export default function ParkDetails({ onMyParks}) {
-    const params = useParams()
-    
+    // const params = useParams()
+    // // console.log(params)
+  
     const location = useLocation()
     const state = location.state
     console.log(state.transit.subway)
@@ -50,12 +51,13 @@ export default function ParkDetails({ onMyParks}) {
 
     return (
         <div>
+            <div className="park-name">
+                <h1>{state.name}</h1>
+            </div>
             <div className="parkDetails">
                 <div className="left-panel">
                     <div className="park-content">
-                        
                         <div className="park-basics">
-                            <h1>{state.name}</h1>
                             <h3>{state.borough}</h3>
                             <a href={state.map}>Find On Google Maps</a>
                             <div>
@@ -65,20 +67,20 @@ export default function ParkDetails({ onMyParks}) {
                         </div>
                         
                         <div className="transit">
-                            <h4>Transportation:</h4>
+                            <h3>Transportation:</h3>
                             <div className="transit-options">
-                                <h5>Subway: </h5>
+                                <h4>Subway: </h4>
                                     <div className="subway">{subwayArray}</div>
-                                <h5>Bus: </h5>
+                                <h4>Bus: </h4>
                                     <ul className="bus">{busArray}</ul>
-                                <h5>Ferry: </h5>
+                                <h4>Ferry: </h4>
                                     <ul className="ferry">{ferryArray}</ul>
                             </div>
                         </div>
                         
 
                         <div className="features">
-                            <h4>Features & Attractions:</h4>
+                            <h3>Features & Attractions:</h3>
                                 <ul className="list-of-features">
                                     {featuresArray}
                                 </ul>
@@ -87,7 +89,7 @@ export default function ParkDetails({ onMyParks}) {
                     </div>
                 </div>
                 <div className="right-panel">
-                    <img src={state.image}></img>
+                    <img className="details-image"src={state.image} alt={state.name}></img>
                 </div>
             </div>
         </div>
