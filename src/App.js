@@ -4,9 +4,9 @@ import ParkContainer from './ParkContainer';
 import VisitedList from './VisitedList';
 import Error from './Error';
 import logo from './logos-icons/logo.png';
+import ParkDetails from './ParkDetails';
 import { Route, Routes, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import ParkDetails from './ParkDetails';
 
 function App() {
   const [parksData, setParksData] = useState([])
@@ -77,7 +77,6 @@ function App() {
         </div>
         <nav>
           <ul className="nav-bar">
-            {/* Links will go here */}
             <li><Link to='/'>Home</Link></li>
             <li><Link to='parks-portal'>Parks Portal</Link></li>
             <li><Link to='my-parks'>My Parks</Link></li>
@@ -85,7 +84,6 @@ function App() {
         </nav>
       </header>
 
-      {/* Browser Routes to components will be down here */}
       <Routes>
         <Route path='/' element={<Home parks={parksData} />}></Route>
         <Route path='/parks-portal' element={<ParkContainer search={search} onSearch={handleSearch} toggle={toggle} onToggle={handleToggle} addPark={addPark} parks={toggledParks} onMyParks={handleMyParks} />}></Route>

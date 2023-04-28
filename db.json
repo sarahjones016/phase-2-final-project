@@ -705,32 +705,6 @@
         "Located at the southernmost point of New York State"
       ],
       "visited": false
-    },
-    {
-      "name": "New Park",
-      "image": "https://cdn.britannica.com/71/189171-050-B4A7DA05/Central-Park-New-York-City.jpg",
-      "borough": "Queens",
-      "map": "",
-      "transit": {
-        "subway": [
-          "/subway-images/e.png",
-          "/subway-images/f.png",
-          "/subway-images/7.png"
-        ],
-        "bus": [
-          "Q101"
-        ],
-        "ferry": [
-          "AST"
-        ]
-      },
-      "features": [
-        "George and Martha Washington made out here",
-        "Thomas jefferson punched hamilton here",
-        "a scene from godfather was filmed here"
-      ],
-      "visited": false,
-      "id": 27
     }
   ]
 }

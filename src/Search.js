@@ -30,8 +30,6 @@ function Search({search, onSearch, toggle, onToggle}) {
           </select>
         </div>
       </div>
-     
-        {/* Search bar will go here and be able to filter through park data to find results */}
     </div>
   )
 }

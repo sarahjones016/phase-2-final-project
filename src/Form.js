@@ -53,7 +53,6 @@ function Form({addPark}) {
 
     function handleSubwayChange(e) {
       let selected = e.target.value;
-      
       selected === "Select Subway" ? setSubway("") : setSubway(e.target.value)
       selected === "Select Subway" ? setSubwayArray(subwayArray) : setSubwayArray([...subwayArray, selected])
     }
